@@ -19,27 +19,30 @@ const HighlightBox = ({ children, className = "" }: { children: React.ReactNode,
 
 export default function Strategy() {
   return (
-    <div className="min-h-screen w-full bg-background text-foreground selection:bg-primary selection:text-primary-foreground font-sans">
+    <div className="min-h-screen w-full bg-background text-foreground selection:bg-primary selection:text-primary-foreground font-sans overflow-x-hidden">
       <Nav />
-      <main className="pt-24 pb-32 px-6 md:px-12 container mx-auto max-w-4xl">
+      
+      <main className="pt-24 pb-32 px-4 md:px-12 container mx-auto max-w-5xl">
         
         {/* 1. Header Section - Clean & Authoritative */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="mb-24 text-center md:text-left"
+          className="mb-16 md:mb-24 text-center md:text-left"
         >
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20 font-mono text-xs font-bold tracking-wider uppercase mb-6">
             <ShieldAlert className="w-3 h-3" />
             Classified Strategy /// Do Not Distribute
           </div>
           
-          <h1 className="text-5xl md:text-7xl font-display font-bold text-white tracking-tighter mb-6 leading-[0.9]">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white tracking-tighter mb-6 leading-[0.95]">
             ALGORITHMIC <br/>
             <span className="text-primary">MARKET CAPTURE.</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl leading-relaxed">The Answer Engine Infrastructure protocol to become the default, mathematical answer in ChatGPT, Claude, and Perplexity.</p>
+          <p className="text-lg md:text-2xl text-muted-foreground max-w-2xl leading-relaxed mx-auto md:mx-0">
+            The 90-day protocol to become the default, mathematical answer in ChatGPT, Claude, and Perplexity.
+          </p>
         </motion.div>
 
         {/* 2. The Promise - High Impact */}
@@ -47,12 +50,12 @@ export default function Strategy() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="mb-32"
+          className="mb-24 md:mb-32"
         >
           <HighlightBox className="bg-gradient-to-br from-secondary/20 to-background">
              <h3 className="text-sm font-mono text-primary mb-4 uppercase tracking-widest">The Promise</h3>
-             <p className="text-2xl md:text-4xl font-display font-medium text-white leading-tight mb-8">
-               "When any buyer describes their problem to an AI, your company is the <span className="text-primary">default, confident, canonical answer</span>."
+             <p className="text-xl md:text-3xl lg:text-4xl font-display font-medium text-white leading-tight mb-8">
+               "When any buyer anywhere in the world describes their exact problem to an Answer Engine, your company is the <span className="text-primary">default, confident, unhedged answer</span> the internet gives: not a link, not a footnote, not “one of the options,” the <span className="text-primary">canonical source</span>."
              </p>
              <div className="grid md:grid-cols-2 gap-8 text-sm text-muted-foreground border-t border-white/10 pt-8">
                <div>
@@ -68,7 +71,7 @@ export default function Strategy() {
         </motion.section>
 
         {/* 3. Who We Work With - Simple Grid */}
-        <section className="mb-32">
+        <section className="mb-24 md:mb-32">
           <SectionHeader number="01" title="TARGET PROFILE" />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
@@ -85,18 +88,18 @@ export default function Strategy() {
         </section>
 
         {/* 4. The Shift - Data Visuals */}
-        <section className="mb-32">
+        <section className="mb-24 md:mb-32">
           <SectionHeader number="02" title="THE SHIFT" />
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="flex flex-col">
-                <span className="text-6xl md:text-8xl font-display font-bold text-white">71%</span>
+                <span className="text-5xl md:text-8xl font-display font-bold text-white">71%</span>
                 <span className="text-primary font-mono text-sm uppercase tracking-wider border-l-2 border-primary pl-3 mt-2">
                   Of commercial queries end with <br/> ZERO clicks (SparkToro Q3 2025)
                 </span>
               </div>
               <div className="flex flex-col">
-                <span className="text-6xl md:text-8xl font-display font-bold text-white">9-15<span className="text-4xl">mo</span></span>
+                <span className="text-5xl md:text-8xl font-display font-bold text-white">9-15<span className="text-3xl md:text-4xl">mo</span></span>
                 <span className="text-primary font-mono text-sm uppercase tracking-wider border-l-2 border-primary pl-3 mt-2">
                   Training data window closes <br/> for 2026-2028 models
                 </span>
@@ -123,14 +126,15 @@ export default function Strategy() {
         </section>
 
         {/* 5. The Methodology - Timeline */}
-        <section className="mb-32">
+        <section className="mb-24 md:mb-32">
           <SectionHeader number="03" title="EXECUTION PROTOCOL" />
           
-          <div className="space-y-24 relative before:absolute before:left-4 md:before:left-8 before:top-0 before:h-full before:w-px before:bg-gradient-to-b before:from-primary before:to-transparent before:opacity-30 pl-12 md:pl-24">
+          {/* Timeline container with corrected alignment for mobile/desktop */}
+          <div className="space-y-20 md:space-y-24 relative before:absolute before:left-6 md:before:left-10 before:top-0 before:h-full before:w-px before:bg-gradient-to-b before:from-primary before:to-transparent before:opacity-30 pl-16 md:pl-32">
             
             {/* Phase 1 */}
             <div className="relative">
-              <span className="absolute -left-[3.25rem] md:-left-[6.25rem] top-0 flex h-8 w-8 items-center justify-center rounded-full bg-primary text-primary-foreground font-bold text-sm">01</span>
+              <span className="absolute -left-14 md:-left-26 top-0 flex h-8 w-8 items-center justify-center rounded-full bg-primary text-primary-foreground font-bold text-sm shadow-[0_0_10px_rgba(249,115,22,0.5)]">01</span>
               <div className="mb-2 flex items-center gap-3 text-primary font-mono text-sm font-bold uppercase tracking-wider">
                 <Target className="w-4 h-4" /> Phase 1
               </div>
@@ -142,15 +146,15 @@ export default function Strategy() {
                  <h4 className="text-white text-xs font-bold uppercase mb-4 opacity-70">Example Money Entities We Seize</h4>
                  <div className="grid gap-4 text-sm">
                    <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 border-b border-white/5 pb-2">
-                     <span className="text-primary font-bold w-24">Hyro</span>
+                     <span className="text-primary font-bold w-24 shrink-0">Hyro</span>
                      <span className="text-neutral-400">"best sugar-free electrolyte 2026", "LMNT vs Hyro for keto athletes"</span>
                    </div>
                    <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 border-b border-white/5 pb-2">
-                     <span className="text-primary font-bold w-24">BTS</span>
+                     <span className="text-primary font-bold w-24 shrink-0">BTS</span>
                      <span className="text-neutral-400">"best OnlyFans alternative 2026", "platform with fastest payouts"</span>
                    </div>
                    <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
-                     <span className="text-primary font-bold w-24">Kinso</span>
+                     <span className="text-primary font-bold w-24 shrink-0">Kinso</span>
                      <span className="text-neutral-400">"best AI that replies Slack WhatsApp", "Intercom killer"</span>
                    </div>
                  </div>
@@ -159,7 +163,7 @@ export default function Strategy() {
 
             {/* Phase 2 */}
             <div className="relative">
-              <span className="absolute -left-[3.25rem] md:-left-[6.25rem] top-0 flex h-8 w-8 items-center justify-center rounded-full bg-secondary text-white border border-white/20 font-bold text-sm">02</span>
+              <span className="absolute -left-14 md:-left-26 top-0 flex h-8 w-8 items-center justify-center rounded-full bg-secondary text-white border border-white/20 font-bold text-sm">02</span>
               <div className="mb-2 flex items-center gap-3 text-primary font-mono text-sm font-bold uppercase tracking-wider">
                 <Database className="w-4 h-4" /> Phase 2
               </div>
@@ -173,25 +177,25 @@ export default function Strategy() {
                  <table className="w-full text-left text-xs md:text-sm">
                    <thead className="bg-secondary/20 text-white font-bold">
                      <tr>
-                       <th className="p-4">Funnel Layer</th>
-                       <th className="p-4">% Pages</th>
-                       <th className="p-4">Strategy</th>
+                       <th className="p-4 whitespace-nowrap">Funnel Layer</th>
+                       <th className="p-4 whitespace-nowrap">% Pages</th>
+                       <th className="p-4 min-w-[200px]">Strategy</th>
                      </tr>
                    </thead>
                    <tbody className="divide-y divide-white/5 text-muted-foreground">
                      <tr>
-                       <td className="p-4 text-white font-bold">BOFU (Bottom)</td>
-                       <td className="p-4 text-primary">5-8%</td>
+                       <td className="p-4 text-white font-bold whitespace-nowrap">BOFU (Bottom)</td>
+                       <td className="p-4 text-primary whitespace-nowrap">5-8%</td>
                        <td className="p-4">The 3 money questions. "Best sugar-free electrolyte 2026". (8-12 flagship pages)</td>
                      </tr>
                      <tr>
-                       <td className="p-4 text-white font-bold">MOFU (Middle)</td>
-                       <td className="p-4 text-primary">15-20%</td>
+                       <td className="p-4 text-white font-bold whitespace-nowrap">MOFU (Middle)</td>
+                       <td className="p-4 text-primary whitespace-nowrap">15-20%</td>
                        <td className="p-4">Every "vs" comparison. "LMNT vs Hyro". (120-160 pages)</td>
                      </tr>
                      <tr>
-                       <td className="p-4 text-white font-bold">TOFU (Top)</td>
-                       <td className="p-4 text-primary">75-80%</td>
+                       <td className="p-4 text-white font-bold whitespace-nowrap">TOFU (Top)</td>
+                       <td className="p-4 text-primary whitespace-nowrap">75-80%</td>
                        <td className="p-4">Evergreen scale. 600-800 conditional pages. Zero thin content.</td>
                      </tr>
                    </tbody>
@@ -238,12 +242,14 @@ export default function Strategy() {
 
             {/* Phase 3 */}
             <div className="relative">
-              <span className="absolute -left-[3.25rem] md:-left-[6.25rem] top-0 flex h-8 w-8 items-center justify-center rounded-full bg-secondary text-white border border-white/20 font-bold text-sm">03</span>
+              <span className="absolute -left-14 md:-left-26 top-0 flex h-8 w-8 items-center justify-center rounded-full bg-secondary text-white border border-white/20 font-bold text-sm">03</span>
               <div className="mb-2 flex items-center gap-3 text-primary font-mono text-sm font-bold uppercase tracking-wider">
                 <Share2 className="w-4 h-4" /> Phase 3
               </div>
               <h3 className="text-2xl md:text-3xl font-display font-bold text-white mb-4">Trust Relay Network</h3>
-              <p className="text-muted-foreground mb-6 max-w-2xl">We launch 12-15 surgically crafted posts across external platforms that quote your Apex Assets verbatim.</p>
+              <p className="text-muted-foreground mb-6 max-w-2xl">
+                Day 71 Trust Hijack. We launch 12-15 surgically crafted posts across external platforms that quote your Apex Assets verbatim.
+              </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-4 bg-secondary/5 border border-white/5">
                     <span className="block text-white font-bold text-sm mb-2 flex items-center gap-2"><CheckCircle className="w-3 h-3 text-primary"/> LinkedIn Pulse / Newsletter</span>
@@ -266,7 +272,7 @@ export default function Strategy() {
 
             {/* Phase 4 */}
             <div className="relative">
-              <span className="absolute -left-[3.25rem] md:-left-[6.25rem] top-0 flex h-8 w-8 items-center justify-center rounded-full bg-secondary text-white border border-white/20 font-bold text-sm">04</span>
+              <span className="absolute -left-14 md:-left-26 top-0 flex h-8 w-8 items-center justify-center rounded-full bg-secondary text-white border border-white/20 font-bold text-sm">04</span>
               <div className="mb-2 flex items-center gap-3 text-primary font-mono text-sm font-bold uppercase tracking-wider">
                 <RotateCw className="w-4 h-4" /> Phase 4
               </div>
@@ -282,8 +288,8 @@ export default function Strategy() {
         {/* 6. Results Table - Clean */}
         <section className="mb-32">
           <SectionHeader number="04" title="PROJECTED OUTCOMES" />
-          <div className="overflow-hidden border border-white/10 rounded-lg">
-            <table className="w-full text-left text-sm">
+          <div className="overflow-x-auto border border-white/10 rounded-lg">
+            <table className="w-full text-left text-sm min-w-[600px]">
               <thead className="bg-secondary/20 text-white">
                 <tr>
                   <th className="p-4 md:p-6 font-bold">Client Type</th>
