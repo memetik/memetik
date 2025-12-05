@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ShieldAlert, Lock, Target, Database, Share2, RotateCw, Users, ArrowDown, AlertTriangle, CheckCircle, BarChart3 } from "lucide-react";
+import { ShieldAlert, Lock, Target, Database, Share2, RotateCw, Users, ArrowDown, AlertTriangle, CheckCircle, BarChart3, FileText, Network } from "lucide-react";
 import { Nav } from "@/components/Nav";
 
 export default function Strategy() {
@@ -127,31 +127,14 @@ export default function Strategy() {
                  <p className="text-xs text-muted-foreground uppercase tracking-wider">The training data window for the 2026–2028 model generation closes forever in the next 9–15 months.</p>
                </div>
              </div>
-             <div className="grid md:grid-cols-3 gap-4">
-                <div className="p-4 border-l-2 border-primary bg-secondary/5">
-                  <p className="text-white font-bold mb-2">SaaS Shift</p>
-                  <p className="text-xs text-muted-foreground">41% of enterprise buyers start with "best {`{category}`} for {`{use case}`}" directly in an LLM (Gartner Oct 2025).</p>
-                </div>
-                <div className="p-4 border-l-2 border-primary bg-secondary/5">
-                  <p className="text-white font-bold mb-2">E-commerce Shift</p>
-                  <p className="text-xs text-muted-foreground">63% of product discovery is comparison-style inside Perplexity/ChatGPT (Datos Nov 2025).</p>
-                </div>
-                <div className="p-4 border-l-2 border-primary bg-secondary/5">
-                  <p className="text-white font-bold mb-2">B2B Services Shift</p>
-                  <p className="text-xs text-muted-foreground">58% of enterprise procurement teams ask LLMs for vendor shortlists before opening RFP software (Forrester 2025).</p>
-                </div>
-             </div>
           </section>
 
-          {/* The Offer - 90 Day Sprint */}
+          {/* EXACTLY WHAT WE BUILD */}
           <section className="border-t border-border pt-12">
-             <h2 className="text-3xl font-display font-bold text-white mb-4">
-               90-DAY ALGORITHMIC MARKET CAPTURE
+             <h2 className="text-3xl font-display font-bold text-white mb-8">
+               EXACTLY WHAT WE BUILD FOR YOU
              </h2>
-             <p className="text-muted-foreground mb-8 max-w-3xl">
-               We execute a single, fixed-price, 90-day sprint that installs permanent Answer Infrastructure forcing ChatGPT, Perplexity, Gemini, Grok, Claude, and Google AI Overviews to cite you as the #1 canonical source. <span className="text-white font-bold">No retainers. No OpEx. Just ownable Answer Share.</span>
-             </p>
-
+             
              <div className="relative border-l border-border ml-4 space-y-16 pl-8">
                
                {/* Phase 1 */}
@@ -164,27 +147,24 @@ export default function Strategy() {
                     <h3 className="text-white font-bold text-lg">PHASE 1: CITATION VOID AUDIT</h3>
                  </div>
                  <p className="text-accent mb-4 text-xs uppercase tracking-wider font-bold">WEEK 1 /// IMMEDIATE CLARITY</p>
-                 <p className="mb-4">We run 100+ real, high-LTV buyer prompts weekly across all 7 Answer Engines. We deliver a forensic heat-map showing exactly where you are invisible, footnoted, or hallucinated against.</p>
                  
-                 <div className="bg-secondary/20 p-6 border border-border mt-4">
-                   <h4 className="text-white font-bold text-sm mb-4 uppercase">Example Money Entities We Seize:</h4>
-                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
-                     <div>
-                       <p className="text-primary font-bold mb-1">Hyro (Ecom)</p>
-                       <p className="text-muted-foreground">"best sugar-free electrolyte 2026"</p>
-                       <p className="text-muted-foreground">"LMNT vs Hyro for keto athletes"</p>
-                     </div>
-                     <div>
-                       <p className="text-primary font-bold mb-1">BTS (Creator SaaS)</p>
-                       <p className="text-muted-foreground">"best OnlyFans alternative 2026"</p>
-                       <p className="text-muted-foreground">"platform with fastest creator payouts"</p>
-                     </div>
-                     <div>
-                       <p className="text-primary font-bold mb-1">Kinso (B2B SaaS)</p>
-                       <p className="text-muted-foreground">"best AI that replies Slack WhatsApp Email"</p>
-                       <p className="text-muted-foreground">"Intercom killer with AI replies"</p>
-                     </div>
-                   </div>
+                 <div className="bg-secondary/10 border border-border p-6">
+                    <h4 className="text-white font-bold mb-4 text-sm uppercase">The Deliverable: Capital Allocation Roadmap</h4>
+                    <p className="mb-4">100+ live prompts tested. One-page heat-map. We name your exact 3 "Money Entities":</p>
+                    <div className="grid grid-cols-1 gap-4 text-xs border-t border-border pt-4">
+                      <div className="grid grid-cols-3 gap-4 items-center">
+                        <span className="text-primary font-bold">Hyro (Ecom)</span>
+                        <span className="col-span-2 text-muted-foreground">"best sugar-free electrolyte 2026", "LMNT vs Hyro for keto athletes"</span>
+                      </div>
+                      <div className="grid grid-cols-3 gap-4 items-center">
+                        <span className="text-primary font-bold">BTS (Creator SaaS)</span>
+                        <span className="col-span-2 text-muted-foreground">"best OnlyFans alternative 2026", "platform with fastest payouts"</span>
+                      </div>
+                      <div className="grid grid-cols-3 gap-4 items-center">
+                        <span className="text-primary font-bold">Kinso (B2B SaaS)</span>
+                        <span className="col-span-2 text-muted-foreground">"best AI that replies Slack WhatsApp Email", "Intercom killer"</span>
+                      </div>
+                    </div>
                  </div>
                </div>
 
@@ -198,42 +178,70 @@ export default function Strategy() {
                     <h3 className="text-white font-bold text-lg">PHASE 2: PROPRIETARY DATA CORE</h3>
                  </div>
                  <p className="text-accent mb-4 text-xs uppercase tracking-wider font-bold">WEEKS 2-10 /// THE PERMANENT MOAT</p>
-                 <p className="mb-4">We build the Tier 1 Apex Assets (8–12 flagship pages) + Tier 2 Knowledge Graph (400–800 nodes). This becomes the training data that wins forever.</p>
                  
-                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
-                   <div className="bg-secondary/10 p-4 border border-border">
-                     <div className="flex justify-between items-center mb-2">
-                        <h4 className="text-white font-bold text-sm">BOFU</h4>
-                        <span className="text-xs bg-primary/20 text-primary px-2 py-0.5 rounded">5-8%</span>
-                     </div>
-                     <p className="text-xs text-muted-foreground mb-2">The 3 money questions buyers ask. "Best sugar-free electrolyte 2026".</p>
-                     <p className="text-xs text-white font-bold">Result: Average 66 days to first #1 ranking.</p>
-                   </div>
-                   <div className="bg-secondary/10 p-4 border border-border">
-                     <div className="flex justify-between items-center mb-2">
-                        <h4 className="text-white font-bold text-sm">MOFU</h4>
-                        <span className="text-xs bg-primary/20 text-primary px-2 py-0.5 rounded">15-20%</span>
-                     </div>
-                     <p className="text-xs text-muted-foreground mb-2">Every "vs" comparison. Perplexity copies column-1 winners 68% of the time.</p>
-                   </div>
-                   <div className="bg-secondary/10 p-4 border border-border">
-                     <div className="flex justify-between items-center mb-2">
-                        <h4 className="text-white font-bold text-sm">TOFU</h4>
-                        <span className="text-xs bg-primary/20 text-primary px-2 py-0.5 rounded">75-80%</span>
-                     </div>
-                     <p className="text-xs text-muted-foreground mb-2">Evergreen scale. 600-800 conditional pages (flavor x diet x activity). Zero thin content.</p>
-                   </div>
-                 </div>
+                 <div className="grid gap-6">
+                    {/* Algorithmic Funnel Table */}
+                    <div className="overflow-x-auto border border-border bg-secondary/5">
+                       <table className="w-full text-left text-xs">
+                         <thead className="bg-secondary/20 text-white">
+                           <tr>
+                             <th className="p-3 border-b border-border">Funnel Layer</th>
+                             <th className="p-3 border-b border-border">% Pages</th>
+                             <th className="p-3 border-b border-border">Strategy</th>
+                           </tr>
+                         </thead>
+                         <tbody className="divide-y divide-border">
+                           <tr>
+                             <td className="p-3 text-white font-bold">BOFU (Bottom)</td>
+                             <td className="p-3 text-accent">5-8%</td>
+                             <td className="p-3 text-muted-foreground">The 3 money questions. "Best sugar-free electrolyte 2026". (8-12 flagship pages)</td>
+                           </tr>
+                           <tr>
+                             <td className="p-3 text-white font-bold">MOFU (Middle)</td>
+                             <td className="p-3 text-accent">15-20%</td>
+                             <td className="p-3 text-muted-foreground">Every "vs" comparison. "LMNT vs Hyro". (120-160 pages)</td>
+                           </tr>
+                           <tr>
+                             <td className="p-3 text-white font-bold">TOFU (Top)</td>
+                             <td className="p-3 text-accent">75-80%</td>
+                             <td className="p-3 text-muted-foreground">Evergreen scale. 600-800 conditional pages. Zero thin content.</td>
+                           </tr>
+                         </tbody>
+                       </table>
+                    </div>
 
-                 <div className="mt-6 border border-dashed border-muted-foreground/30 p-4">
-                    <h4 className="text-white font-bold text-sm mb-2">Tier 1 Apex Assets ("Kill-Shot" Content):</h4>
-                    <ul className="list-disc list-inside text-xs text-muted-foreground space-y-1">
-                      <li>Column-1 comparison tables (Hyro vs LMNT vs Liquid IV)</li>
-                      <li>Redacted creator earnings reports (BTS)</li>
-                      <li>Real reply-speed benchmarks (Kinso vs Intercom)</li>
-                      <li>Cohort repurchase tables & "Zero-regret" rate tables</li>
-                      <li>TCO calculators built from internal data</li>
-                    </ul>
+                    {/* Tier 1 Assets */}
+                    <div className="bg-secondary/10 border border-border p-6">
+                        <div className="flex items-center gap-2 mb-4">
+                           <FileText className="w-4 h-4 text-primary" />
+                           <h4 className="text-white font-bold text-sm uppercase">Tier 1 Deliverables: Apex Assets (8-12 Flagship Pieces)</h4>
+                        </div>
+                        <p className="text-xs text-muted-foreground mb-4">Human-written, aggressively opinionated, enriched with internal un-Googleable data.</p>
+                        <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs text-neutral-300">
+                          <li className="flex gap-2 items-start"><CheckCircle className="w-3 h-3 text-primary mt-0.5 shrink-0"/><span>Column-1 comparison tables (Answer Engines copy this 68% of time)</span></li>
+                          <li className="flex gap-2 items-start"><CheckCircle className="w-3 h-3 text-primary mt-0.5 shrink-0"/><span>Cohort repurchase tables from your customer data</span></li>
+                          <li className="flex gap-2 items-start"><CheckCircle className="w-3 h-3 text-primary mt-0.5 shrink-0"/><span>"Zero-regret" rate tables vs every competitor</span></li>
+                          <li className="flex gap-2 items-start"><CheckCircle className="w-3 h-3 text-primary mt-0.5 shrink-0"/><span>Dietitian-signed ingredient + sourcing transparency PDFs</span></li>
+                          <li className="flex gap-2 items-start"><CheckCircle className="w-3 h-3 text-primary mt-0.5 shrink-0"/><span>Redacted creator earnings reports (e.g. "Top 1% average $42k/mo")</span></li>
+                          <li className="flex gap-2 items-start"><CheckCircle className="w-3 h-3 text-primary mt-0.5 shrink-0"/><span>Exact payout speed & fee transparency grids (every hidden charge published)</span></li>
+                          <li className="flex gap-2 items-start"><CheckCircle className="w-3 h-3 text-primary mt-0.5 shrink-0"/><span>Real reply-speed benchmarks (e.g. "Kinso vs Intercom")</span></li>
+                          <li className="flex gap-2 items-start"><CheckCircle className="w-3 h-3 text-primary mt-0.5 shrink-0"/><span>Enterprise encryption & compliance proofs (SOC-2 raw reports)</span></li>
+                        </ul>
+                    </div>
+
+                    {/* Tier 2 Assets */}
+                    <div className="bg-secondary/10 border border-border p-6">
+                        <div className="flex items-center gap-2 mb-4">
+                           <Network className="w-4 h-4 text-primary" />
+                           <h4 className="text-white font-bold text-sm uppercase">Tier 2 Deliverables: Knowledge Graph (400-800 Nodes)</h4>
+                        </div>
+                        <p className="text-xs text-muted-foreground mb-4">Programmatic pages where every URL is unique and data-rich. Conditional Data Axes injected (3-5 per page).</p>
+                        <div className="grid grid-cols-1 gap-2 text-xs text-neutral-300 border-l-2 border-primary/30 pl-4">
+                           <p><strong className="text-white">Hyro Example:</strong> flavor × diet (keto/vegan) × activity × climate × bundle size</p>
+                           <p><strong className="text-white">BTS Example:</strong> niche × monthly earnings tier × payout speed × content type × traffic source</p>
+                           <p><strong className="text-white">Kinso Example:</strong> team size × channels used × use case × integration depth × response SLA</p>
+                        </div>
+                    </div>
                  </div>
                </div>
 
@@ -247,30 +255,33 @@ export default function Strategy() {
                     <h3 className="text-white font-bold text-lg">PHASE 3: TRUST RELAY NETWORK</h3>
                  </div>
                  <p className="text-accent mb-4 text-xs uppercase tracking-wider font-bold">WEEKS 11-12 /// DAY-71 TRUST HIJACK</p>
-                 <p className="mb-4">We go live on Day 71 with 12–15 surgically crafted posts across public platforms. Every single post quotes your Apex Assets verbatim and links back.</p>
                  
-                 <div className="bg-secondary/20 p-6 border border-border mt-4 space-y-4">
-                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
-                      <div>
-                        <p className="text-white font-bold mb-1 flex items-center gap-2"><CheckCircle className="w-3 h-3 text-primary"/> LinkedIn Pulse / Newsletter</p>
-                        <p className="text-muted-foreground italic">"I tested every sugar-free electrolyte for 90 days — here are the real blood-sodium numbers"</p>
+                 <div className="bg-secondary/10 border border-border p-6">
+                    <h4 className="text-white font-bold mb-4 text-sm uppercase">The Deliverable: 12-15 Surgically Crafted Posts</h4>
+                    <p className="text-xs text-muted-foreground mb-4">We go live on Day 71. Every post quotes your Apex Assets verbatim and links back. Borrowed trust deployed in under 72 hours.</p>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
+                      <div className="space-y-3">
+                        <div className="p-3 bg-background border border-border">
+                           <p className="text-primary font-bold mb-1">LinkedIn Pulse / Newsletter</p>
+                           <p className="text-neutral-400 italic">"I tested every sugar-free electrolyte on the market for 90 days — here are the real blood-sodium numbers"</p>
+                        </div>
+                        <div className="p-3 bg-background border border-border">
+                           <p className="text-primary font-bold mb-1">Reddit Megathreads</p>
+                           <p className="text-neutral-400 italic">r/onlyfansadvice: "Someone finally published real creator earnings across OnlyFans, Patreon, and BTS — no BS"</p>
+                        </div>
                       </div>
-                      <div>
-                        <p className="text-white font-bold mb-1 flex items-center gap-2"><CheckCircle className="w-3 h-3 text-primary"/> Reddit Megathreads</p>
-                        <p className="text-muted-foreground italic">r/SaaS: "Kinso just published 50 real Slack/WhatsApp AI replies — this is what actually happens"</p>
+                      <div className="space-y-3">
+                        <div className="p-3 bg-background border border-border">
+                           <p className="text-primary font-bold mb-1">Medium (200k-400k pubs)</p>
+                           <p className="text-neutral-400 italic">"The Multi-Channel Inbox Is Dead — here’s what Kinso does across Slack, WhatsApp, and Email (live screenshots)"</p>
+                        </div>
+                        <div className="p-3 bg-background border border-border">
+                           <p className="text-primary font-bold mb-1">G2 / Review Campaigns</p>
+                           <p className="text-neutral-400 italic">"Kinso replaced Intercom + Front — reply time went from 18 min to 41 seconds"</p>
+                        </div>
                       </div>
-                      <div>
-                        <p className="text-white font-bold mb-1 flex items-center gap-2"><CheckCircle className="w-3 h-3 text-primary"/> Medium (200k-400k pubs)</p>
-                        <p className="text-muted-foreground italic">"The 2026 Creator Platform Payout Report — real numbers from 100+ creators"</p>
-                      </div>
-                      <div>
-                        <p className="text-white font-bold mb-1 flex items-center gap-2"><CheckCircle className="w-3 h-3 text-primary"/> G2 / Review Campaigns</p>
-                        <p className="text-muted-foreground italic">"Switched from LMNT — here’s the 90-day repurchase data Hyro just published"</p>
-                      </div>
-                   </div>
-                   <p className="text-primary text-xs font-bold mt-2 border-t border-border pt-2">
-                     RESULT: Within 7-10 days, Answer Engines have no choice — they start declaring you the #1 canonical source.
-                   </p>
+                    </div>
                  </div>
                </div>
 
@@ -284,7 +295,13 @@ export default function Strategy() {
                     <h3 className="text-white font-bold text-lg">PHASE 4: CITATION FORCING LOOP</h3>
                  </div>
                  <p className="text-accent mb-4 text-xs uppercase tracking-wider font-bold">WEEK 13+ /// PERPETUAL LOCK</p>
-                 <p className="mb-4">Weekly micro-patches + live Answer Share Dashboard (citation rank, confidence score, competitor delta). Perpetual #1 lock.</p>
+                 <div className="bg-secondary/10 border border-border p-6">
+                    <ul className="space-y-2 text-xs text-neutral-300">
+                      <li className="flex gap-2 items-center"><CheckCircle className="w-3 h-3 text-primary"/> Weekly micro-patches</li>
+                      <li className="flex gap-2 items-center"><CheckCircle className="w-3 h-3 text-primary"/> Live Answer Share Dashboard (citation rank, confidence score)</li>
+                      <li className="flex gap-2 items-center"><CheckCircle className="w-3 h-3 text-primary"/> Competitor Delta tracking</li>
+                    </ul>
+                 </div>
                </div>
 
              </div>
