@@ -36,7 +36,7 @@ export default function Home() {
         <footer className="bg-background text-white py-24 px-6 md:px-12 border-t border-border">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
                 <div className="col-span-1 md:col-span-2">
-                    <h2 className="text-8xl font-display font-bold tracking-tighter mb-8 text-white">MEMETIK</h2>
+                    <h2 className="text-5xl md:text-8xl font-display font-bold tracking-tighter mb-8 text-white">MEMETIK</h2>
                     <p className="font-mono text-sm text-muted-foreground max-w-md border-l-2 border-accent pl-4">
                         The world's first agency dedicated to LLM SEO and Generative Engine Optimization.
                     </p>
