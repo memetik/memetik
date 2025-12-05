@@ -52,7 +52,7 @@ export default function Strategy() {
           <HighlightBox className="bg-gradient-to-br from-secondary/20 to-background">
              <h3 className="text-sm font-mono text-primary mb-4 uppercase tracking-widest">The Promise</h3>
              <p className="text-2xl md:text-4xl font-display font-medium text-white leading-tight mb-8">
-               "When any buyer describes their problem to an AI, your company is the <span className="text-primary">default, confident, unhedged answer</span>."
+               "When any buyer describes their problem to an AI, your company is the <span className="text-primary">default, confident, canonical answer</span>."
              </p>
              <div className="grid md:grid-cols-2 gap-8 text-sm text-muted-foreground border-t border-white/10 pt-8">
                <div>
