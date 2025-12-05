@@ -173,7 +173,22 @@ export default function BTSOffer() {
           </div>
         </section>
 
-        {/* 4. CTA - Clean & Centered */}
+        {/* 4. Commitment to Winning */}
+        <section className="mb-24 max-w-3xl mx-auto">
+           <div className="bg-secondary/5 border border-white/10 p-8 md:p-12">
+             <h3 className="text-xl md:text-2xl font-display font-bold text-white mb-6">Our Commitment to Winning</h3>
+             <div className="space-y-6 text-muted-foreground leading-relaxed">
+               <p>
+                 We want BTS to dominate, period. If you have an offer from another agency that includes a specific tactic or angle you like, share it with us. We’re happy to review it, validate it, and integrate the good parts into our execution plan.
+               </p>
+               <p className="text-white font-medium border-l-2 border-primary pl-4">
+                 However, based on the data we see across every major AI model today, we firmly believe the Proprietary Data Core + Trust Relay approach outlined here is the only path that yields permanent, defensive results.
+               </p>
+             </div>
+           </div>
+        </section>
+
+        {/* 5. CTA - Clean & Centered */}
         <section className="text-center max-w-2xl mx-auto">
           <h2 className="text-3xl font-display font-bold text-white mb-6">READY TO FIGHT?</h2>
           <button className="group relative inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground font-bold text-lg tracking-wide hover:bg-primary/90 transition-all">
