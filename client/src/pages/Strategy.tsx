@@ -22,7 +22,7 @@ export default function Strategy() {
     <div className="min-h-screen w-full bg-background text-foreground selection:bg-primary selection:text-primary-foreground font-sans">
       <Nav />
       
-      <main className="pt-24 pb-32 px-6 md:px-12 container mx-auto max-w-4xl">
+      <main className="pt-24 pb-32 px-6 md:px-12 container mx-auto max-w-5xl">
         
         {/* 1. Header Section - Clean & Authoritative */}
         <motion.div 
@@ -77,7 +77,7 @@ export default function Strategy() {
             {[
               { title: "Series A-C SaaS", desc: "High-growth tech needing category dominance." },
               { title: "$20-300M E-com", desc: "DTC brands fighting for comparison tables." },
-              { title: "B2B Services", desc: "Agencies, Firms, & MSPs seeking vendor shortlists." }
+              { title: "$10-150M B2B Services", desc: "Consulting, Agencies, Firms, & MSPs seeking vendor shortlists." }
             ].map((item, i) => (
               <div key={i} className="p-6 bg-secondary/5 border border-white/5 hover:border-primary/30 transition-colors group">
                 <h3 className="text-white font-bold mb-2 group-hover:text-primary transition-colors">{item.title}</h3>
@@ -110,15 +110,15 @@ export default function Strategy() {
                <ul className="space-y-4 text-sm text-muted-foreground">
                  <li className="flex gap-3">
                    <CheckCircle className="w-5 h-5 text-primary shrink-0" />
-                   <span><strong>SaaS:</strong> 41% of buyers start with "best X for Y" directly in LLMs.</span>
+                   <span><strong>SaaS:</strong> 41% of buyers start with "best X for Y" directly in LLMs (Gartner).</span>
                  </li>
                  <li className="flex gap-3">
                    <CheckCircle className="w-5 h-5 text-primary shrink-0" />
-                   <span><strong>E-com:</strong> 63% of discovery is comparison-style inside Perplexity.</span>
+                   <span><strong>E-com:</strong> 63% of discovery is comparison-style inside Perplexity (Datos).</span>
                  </li>
                  <li className="flex gap-3">
                    <CheckCircle className="w-5 h-5 text-primary shrink-0" />
-                   <span><strong>B2B:</strong> 58% of procurement teams ask LLMs for shortlists first.</span>
+                   <span><strong>B2B:</strong> 58% of procurement teams ask LLMs for shortlists first (Forrester).</span>
                  </li>
                </ul>
             </div>
@@ -139,22 +139,22 @@ export default function Strategy() {
               </div>
               <h3 className="text-2xl md:text-3xl font-display font-bold text-white mb-4">Citation Void Audit</h3>
               <p className="text-muted-foreground mb-6 max-w-2xl">
-                We run 100+ real buyer prompts to find where you are invisible. We deliver a <strong>Capital Allocation Roadmap</strong> naming your exact 3 "Money Entities".
+                We run 100+ real buyer prompts across 7 engines to find where you are invisible. We deliver a <strong>Capital Allocation Roadmap</strong> naming your exact 3 "Money Entities".
               </p>
               <div className="bg-secondary/10 p-6 border border-white/10 rounded-lg">
-                 <h4 className="text-white text-xs font-bold uppercase mb-4 opacity-70">Example Money Entities</h4>
+                 <h4 className="text-white text-xs font-bold uppercase mb-4 opacity-70">Example Money Entities We Seize</h4>
                  <div className="grid gap-4 text-sm">
                    <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 border-b border-white/5 pb-2">
                      <span className="text-primary font-bold w-24">Hyro</span>
-                     <span className="text-neutral-400">"best sugar-free electrolyte 2026"</span>
+                     <span className="text-neutral-400">"best sugar-free electrolyte 2026", "LMNT vs Hyro for keto athletes"</span>
                    </div>
                    <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 border-b border-white/5 pb-2">
                      <span className="text-primary font-bold w-24">BTS</span>
-                     <span className="text-neutral-400">"best OnlyFans alternative 2026"</span>
+                     <span className="text-neutral-400">"best OnlyFans alternative 2026", "platform with fastest payouts"</span>
                    </div>
                    <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                      <span className="text-primary font-bold w-24">Kinso</span>
-                     <span className="text-neutral-400">"Intercom killer with AI replies"</span>
+                     <span className="text-neutral-400">"best AI that replies Slack WhatsApp", "Intercom killer"</span>
                    </div>
                  </div>
               </div>
@@ -170,28 +170,58 @@ export default function Strategy() {
               <p className="text-muted-foreground mb-6 max-w-2xl">
                 We build the permanent moat. Tier 1 "Apex Assets" (Flagship Content) and Tier 2 "Knowledge Graph" (Programmatic Data).
               </p>
+
+              {/* Funnel Table */}
+              <div className="mb-8 overflow-x-auto border border-white/10 rounded-lg bg-secondary/5">
+                 <table className="w-full text-left text-xs md:text-sm">
+                   <thead className="bg-secondary/20 text-white font-bold">
+                     <tr>
+                       <th className="p-4">Funnel Layer</th>
+                       <th className="p-4">% Pages</th>
+                       <th className="p-4">Strategy</th>
+                     </tr>
+                   </thead>
+                   <tbody className="divide-y divide-white/5 text-muted-foreground">
+                     <tr>
+                       <td className="p-4 text-white font-bold">BOFU (Bottom)</td>
+                       <td className="p-4 text-primary">5-8%</td>
+                       <td className="p-4">The 3 money questions. "Best sugar-free electrolyte 2026". (8-12 flagship pages)</td>
+                     </tr>
+                     <tr>
+                       <td className="p-4 text-white font-bold">MOFU (Middle)</td>
+                       <td className="p-4 text-primary">15-20%</td>
+                       <td className="p-4">Every "vs" comparison. "LMNT vs Hyro". (120-160 pages)</td>
+                     </tr>
+                     <tr>
+                       <td className="p-4 text-white font-bold">TOFU (Top)</td>
+                       <td className="p-4 text-primary">75-80%</td>
+                       <td className="p-4">Evergreen scale. 600-800 conditional pages. Zero thin content.</td>
+                     </tr>
+                   </tbody>
+                 </table>
+              </div>
               
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-secondary/5 p-6 border border-white/10">
                   <div className="flex items-center gap-2 mb-4 text-white font-bold">
-                    <FileText className="w-4 h-4 text-primary" /> Apex Assets (Tier 1)
+                    <FileText className="w-4 h-4 text-primary" /> Tier 1: Apex Assets (8-12 Pieces)
                   </div>
                   <ul className="space-y-3 text-sm text-neutral-400">
-                    <li className="flex gap-2"><ChevronRight className="w-4 h-4 text-primary shrink-0"/> Column-1 Comparison Tables</li>
-                    <li className="flex gap-2"><ChevronRight className="w-4 h-4 text-primary shrink-0"/> Redacted Earnings/Data Reports</li>
-                    <li className="flex gap-2"><ChevronRight className="w-4 h-4 text-primary shrink-0"/> "Zero-regret" Rate Tables</li>
-                    <li className="flex gap-2"><ChevronRight className="w-4 h-4 text-primary shrink-0"/> SOC-2 & Compliance Proofs</li>
+                    <li className="flex gap-2"><CheckCircle className="w-4 h-4 text-primary shrink-0"/> Column-1 Comparison Tables (Answer Engines copy 68% of time)</li>
+                    <li className="flex gap-2"><CheckCircle className="w-4 h-4 text-primary shrink-0"/> Redacted Earnings/Data Reports (e.g. "Top 1% average $42k/mo")</li>
+                    <li className="flex gap-2"><CheckCircle className="w-4 h-4 text-primary shrink-0"/> "Zero-regret" Rate Tables vs Competitors</li>
+                    <li className="flex gap-2"><CheckCircle className="w-4 h-4 text-primary shrink-0"/> TCO Calculators & Real Benchmarks (e.g. Reply Speed)</li>
+                    <li className="flex gap-2"><CheckCircle className="w-4 h-4 text-primary shrink-0"/> SOC-2 & Compliance Proofs</li>
                   </ul>
                 </div>
                 <div className="bg-secondary/5 p-6 border border-white/10">
                   <div className="flex items-center gap-2 mb-4 text-white font-bold">
-                    <Network className="w-4 h-4 text-primary" /> Knowledge Graph (Tier 2)
+                    <Network className="w-4 h-4 text-primary" /> Tier 2: Knowledge Graph (400-800 Nodes)
                   </div>
                   <ul className="space-y-3 text-sm text-neutral-400">
-                    <li className="flex gap-2"><ChevronRight className="w-4 h-4 text-primary shrink-0"/> 400-800 Programmatic Nodes</li>
-                    <li className="flex gap-2"><ChevronRight className="w-4 h-4 text-primary shrink-0"/> Conditional Data Axes</li>
-                    <li className="flex gap-2"><ChevronRight className="w-4 h-4 text-primary shrink-0"/> Unique URL for every variant</li>
-                    <li className="flex gap-2"><ChevronRight className="w-4 h-4 text-primary shrink-0"/> Zero Thin Content</li>
+                    <li className="flex gap-2"><ChevronRight className="w-4 h-4 text-primary shrink-0"/> <strong>Hyro:</strong> flavor × diet × activity × climate × bundle size</li>
+                    <li className="flex gap-2"><ChevronRight className="w-4 h-4 text-primary shrink-0"/> <strong>BTS:</strong> niche × monthly earnings tier × payout speed</li>
+                    <li className="flex gap-2"><ChevronRight className="w-4 h-4 text-primary shrink-0"/> <strong>Kinso:</strong> team size × channels × use case × integration depth</li>
                   </ul>
                 </div>
               </div>
@@ -199,8 +229,12 @@ export default function Strategy() {
               <div className="mt-6 p-4 bg-primary/5 border border-primary/20 flex gap-4 items-start">
                 <Zap className="w-5 h-5 text-primary shrink-0 mt-1" />
                 <div className="text-sm">
-                  <strong className="text-white block mb-1">Why This Wins:</strong>
-                  <span className="text-muted-foreground">We publish BOFU first (fastest wins), then MOFU (comparison killers), then TOFU (scale). This triggers "information gain" signals that AI models prioritize.</span>
+                  <strong className="text-white block mb-1">Why This Order Wins:</strong>
+                  <span className="text-muted-foreground">
+                    1. <strong>Days 1-60:</strong> BOFU First (Fastest wins, avg 66 days).<br/>
+                    2. <strong>Days 61-90:</strong> MOFU Comparison Killers (Block competitors).<br/>
+                    3. <strong>Day 91+:</strong> TOFU Flood (Scale & Lock the moat).
+                  </span>
                 </div>
               </div>
             </div>
@@ -215,13 +249,23 @@ export default function Strategy() {
               <p className="text-muted-foreground mb-6 max-w-2xl">
                 Day 71 Trust Hijack. We launch 12-15 surgically crafted posts across external platforms that quote your Apex Assets verbatim.
               </p>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                {['LinkedIn Pulse', 'Reddit Megathreads', 'Medium (200k+)', 'G2 Reviews'].map((platform, i) => (
-                  <div key={i} className="p-4 bg-secondary/5 border border-white/5 text-center">
-                    <span className="block text-white font-bold text-sm mb-1">{platform}</span>
-                    <span className="text-xs text-muted-foreground">Backlinks to Core</span>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="p-4 bg-secondary/5 border border-white/5">
+                    <span className="block text-white font-bold text-sm mb-2 flex items-center gap-2"><CheckCircle className="w-3 h-3 text-primary"/> LinkedIn Pulse / Newsletter</span>
+                    <span className="text-xs text-muted-foreground italic block">"I tested every sugar-free electrolyte on the market for 90 days — here are the real blood-sodium numbers"</span>
                   </div>
-                ))}
+                  <div className="p-4 bg-secondary/5 border border-white/5">
+                    <span className="block text-white font-bold text-sm mb-2 flex items-center gap-2"><CheckCircle className="w-3 h-3 text-primary"/> Reddit Megathreads</span>
+                    <span className="text-xs text-muted-foreground italic block">r/SaaS: "Kinso just published 50 real Slack/WhatsApp AI replies — this is what actually happens"</span>
+                  </div>
+                  <div className="p-4 bg-secondary/5 border border-white/5">
+                    <span className="block text-white font-bold text-sm mb-2 flex items-center gap-2"><CheckCircle className="w-3 h-3 text-primary"/> Medium (200k-400k pubs)</span>
+                    <span className="text-xs text-muted-foreground italic block">"The 2026 Creator Platform Payout Report — real numbers from 100+ creators (BTS paid out 41% faster)"</span>
+                  </div>
+                  <div className="p-4 bg-secondary/5 border border-white/5">
+                    <span className="block text-white font-bold text-sm mb-2 flex items-center gap-2"><CheckCircle className="w-3 h-3 text-primary"/> G2 / Review Campaigns</span>
+                    <span className="text-xs text-muted-foreground italic block">"Switched from LMNT — here’s the 90-day repurchase data Hyro just published"</span>
+                  </div>
               </div>
             </div>
 
@@ -248,6 +292,7 @@ export default function Strategy() {
               <thead className="bg-secondary/20 text-white">
                 <tr>
                   <th className="p-4 md:p-6 font-bold">Client Type</th>
+                  <th className="p-4 md:p-6 font-bold text-right">BOFU Pages</th>
                   <th className="p-4 md:p-6 font-bold text-right">Time to #1</th>
                   <th className="p-4 md:p-6 font-bold text-right">Answer Share</th>
                   <th className="p-4 md:p-6 font-bold text-right text-primary">AI Referrals</th>
@@ -256,18 +301,21 @@ export default function Strategy() {
               <tbody className="divide-y divide-white/5 bg-secondary/5">
                 <tr>
                   <td className="p-4 md:p-6 text-white font-medium">DTC Health (Hyro)</td>
+                  <td className="p-4 md:p-6 text-muted-foreground text-right">12</td>
                   <td className="p-4 md:p-6 text-muted-foreground text-right">64 Days</td>
                   <td className="p-4 md:p-6 text-muted-foreground text-right">78%</td>
                   <td className="p-4 md:p-6 text-primary font-bold text-right">400k+</td>
                 </tr>
                 <tr>
                   <td className="p-4 md:p-6 text-white font-medium">Creator SaaS (BTS)</td>
+                  <td className="p-4 md:p-6 text-muted-foreground text-right">10</td>
                   <td className="p-4 md:p-6 text-muted-foreground text-right">71 Days</td>
                   <td className="p-4 md:p-6 text-muted-foreground text-right">81%</td>
                   <td className="p-4 md:p-6 text-primary font-bold text-right">320k+</td>
                 </tr>
                 <tr>
                   <td className="p-4 md:p-6 text-white font-medium">AI Sales (Kinso)</td>
+                  <td className="p-4 md:p-6 text-muted-foreground text-right">11</td>
                   <td className="p-4 md:p-6 text-muted-foreground text-right">58 Days</td>
                   <td className="p-4 md:p-6 text-muted-foreground text-right">74%</td>
                   <td className="p-4 md:p-6 text-primary font-bold text-right">280k+</td>
@@ -282,7 +330,8 @@ export default function Strategy() {
           <h2 className="text-3xl font-display font-bold text-white mb-6">SECURE YOUR MOAT</h2>
           <p className="text-muted-foreground mb-10 leading-relaxed">
             The window is closing. Once the training data is set, the moat is dug. 
-            Start the infrastructure build today.
+            <br/><br/>
+            <span className="text-white font-bold italic">"When we’re done, buyers don’t Google you. They ask an AI your exact money question — and the entire internet answers with your name."</span>
           </p>
           <button className="group relative inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground font-bold text-lg tracking-wide hover:bg-primary/90 transition-all">
             INITIATE INFRASTRUCTURE BUILD
