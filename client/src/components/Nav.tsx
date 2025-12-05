@@ -13,10 +13,15 @@ export function Nav() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 mix-blend-difference text-white">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-background/80 backdrop-blur-sm border-b border-border text-foreground">
       <div className="flex justify-between items-center px-6 py-6 md:px-12">
-        <Link href="/" className="text-2xl md:text-3xl font-display font-bold tracking-tighter hover:opacity-70 transition-opacity">
-            MEMETIK
+        <Link href="/">
+          <a className="flex items-center gap-2 group">
+             <div className="w-3 h-3 bg-primary group-hover:bg-accent transition-colors"></div>
+             <span className="text-2xl md:text-3xl font-display font-bold tracking-tighter hover:opacity-70 transition-opacity">
+               MEMETIK
+             </span>
+          </a>
         </Link>
 
         {/* Desktop Menu */}
@@ -25,7 +30,7 @@ export function Nav() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-mono tracking-widest hover:line-through decoration-2"
+              className="text-sm font-mono tracking-widest hover:text-primary transition-colors decoration-2"
             >
               {link.label}
             </a>
@@ -34,7 +39,7 @@ export function Nav() {
 
         {/* Mobile Menu Toggle */}
         <button
-          className="md:hidden"
+          className="md:hidden text-foreground hover:text-primary transition-colors"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
         >
@@ -49,14 +54,14 @@ export function Nav() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="absolute top-full left-0 w-full bg-black text-white p-6 border-b border-white/20 md:hidden"
+            className="absolute top-full left-0 w-full bg-background text-foreground p-6 border-b border-border md:hidden shadow-2xl"
           >
             <div className="flex flex-col gap-6 items-center">
               {links.map((link) => (
                 <a
                   key={link.href}
                   href={link.href}
-                  className="text-xl font-display font-bold tracking-tight"
+                  className="text-xl font-display font-bold tracking-tight hover:text-primary transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.label}

@@ -38,11 +38,16 @@ const projects = [
 
 export function ProjectGrid() {
   return (
-    <section id="work" className="py-24 md:py-32 bg-background text-foreground px-6 md:px-12">
+    <section id="work" className="py-24 md:py-32 bg-background text-foreground px-6 md:px-12 border-b border-border">
       <div className="flex flex-col md:flex-row justify-between items-end mb-16 md:mb-24 border-b border-border pb-6">
-        <h2 className="text-4xl md:text-6xl font-display font-medium tracking-tighter">
-          CASE STUDIES
-        </h2>
+        <div>
+          <div className="inline-block px-2 py-1 bg-accent text-accent-foreground font-mono text-xs font-bold mb-4">
+            PROVEN INFRASTRUCTURE
+          </div>
+          <h2 className="text-4xl md:text-6xl font-display font-medium tracking-tighter text-white">
+            CASE STUDIES
+          </h2>
+        </div>
         <span className="font-mono text-sm text-muted-foreground mb-2">
           (GENERATIVE ERA)
         </span>
@@ -56,13 +61,13 @@ export function ProjectGrid() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.1 }}
-            className="group relative border-b border-border py-12 transition-colors hover:bg-neutral-50 dark:hover:bg-neutral-900 cursor-pointer"
+            className="group relative border-b border-border py-12 transition-colors hover:bg-secondary/20 cursor-pointer"
           >
             <div className="grid grid-cols-1 md:grid-cols-12 gap-4 items-baseline">
-              <span className="col-span-1 font-mono text-xs text-muted-foreground">
+              <span className="col-span-1 font-mono text-xs text-primary">
                 /{project.id}
               </span>
-              <h3 className="col-span-1 md:col-span-5 text-2xl md:text-4xl font-display font-medium tracking-tight group-hover:pl-4 transition-all duration-300">
+              <h3 className="col-span-1 md:col-span-5 text-2xl md:text-4xl font-display font-medium tracking-tight group-hover:pl-4 transition-all duration-300 text-white group-hover:text-primary">
                 {project.title}
               </h3>
               <div className="col-span-2 md:col-span-2 font-mono text-xs uppercase tracking-wider text-muted-foreground">
@@ -71,11 +76,11 @@ export function ProjectGrid() {
               <div className="col-span-2 md:col-span-2 font-mono text-xs uppercase tracking-wider text-muted-foreground">
                 {project.category}
               </div>
-              <div className="col-span-2 md:col-span-2 font-mono text-xs font-bold text-black dark:text-white">
+              <div className="col-span-2 md:col-span-2 font-mono text-xs font-bold text-accent">
                 {project.result}
               </div>
               <div className="absolute right-0 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
-                <ArrowUpRight className="w-6 h-6" />
+                <ArrowUpRight className="w-6 h-6 text-primary" />
               </div>
             </div>
           </motion.div>
@@ -83,7 +88,7 @@ export function ProjectGrid() {
       </div>
       
       <div className="mt-12 flex justify-center">
-        <button className="font-mono text-sm border-b border-black pb-1 hover:pb-2 transition-all">
+        <button className="font-mono text-sm border-b border-primary text-primary pb-1 hover:pb-2 hover:text-white hover:border-white transition-all">
             VIEW FULL REPORT
         </button>
       </div>
