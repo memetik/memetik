@@ -21,7 +21,6 @@ export default function Strategy() {
   return (
     <div className="min-h-screen w-full bg-background text-foreground selection:bg-primary selection:text-primary-foreground font-sans">
       <Nav />
-      
       <main className="pt-24 pb-32 px-6 md:px-12 container mx-auto max-w-4xl">
         
         {/* 1. Header Section - Clean & Authoritative */}
@@ -246,9 +245,7 @@ export default function Strategy() {
                 <Share2 className="w-4 h-4" /> Phase 3
               </div>
               <h3 className="text-2xl md:text-3xl font-display font-bold text-white mb-4">Trust Relay Network</h3>
-              <p className="text-muted-foreground mb-6 max-w-2xl">
-                Day 71 Trust Hijack. We launch 12-15 surgically crafted posts across external platforms that quote your Apex Assets verbatim.
-              </p>
+              <p className="text-muted-foreground mb-6 max-w-2xl">We launch 12-15 surgically crafted posts across external platforms that quote your Apex Assets verbatim.</p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-4 bg-secondary/5 border border-white/5">
                     <span className="block text-white font-bold text-sm mb-2 flex items-center gap-2"><CheckCircle className="w-3 h-3 text-primary"/> LinkedIn Pulse / Newsletter</span>
