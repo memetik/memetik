@@ -6,7 +6,7 @@ import { Nav } from "@/components/Nav";
 const SectionHeader = ({ number, title }: { number: string, title: string }) => (
   <div className="flex items-center gap-4 mb-8 md:mb-12 border-b border-primary/20 pb-4">
     <span className="text-primary font-mono text-xl font-bold">{number}</span>
-    <h2 className="text-2xl md:text-4xl font-display font-bold text-white tracking-tight">{title}</h2>
+    <h2 className="text-2xl md:text-4xl font-display font-bold text-foreground tracking-tight">{title}</h2>
   </div>
 );
 
@@ -35,7 +35,7 @@ export default function BTSOffer() {
             Strategic Proposal /// BTS
           </div>
           
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white tracking-tighter mb-6 leading-[0.95]">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-foreground tracking-tighter mb-6 leading-[0.95]">
             PROJECT <br/>
             <span className="text-primary">DEFAULT ANSWER.</span>
           </h1>
@@ -52,21 +52,21 @@ export default function BTSOffer() {
           viewport={{ once: true }}
           className="mb-24 md:mb-32"
         >
-          <HighlightBox className="bg-gradient-to-br from-secondary/20 to-background mb-8">
+          <HighlightBox className="bg-gradient-to-br from-secondary/5 to-background mb-8">
              <h3 className="text-sm font-mono text-primary mb-4 uppercase tracking-widest">The Goal</h3>
-             <p className="text-xl md:text-3xl lg:text-4xl font-display font-medium text-white leading-tight">
+             <p className="text-xl md:text-3xl lg:text-4xl font-display font-medium text-foreground leading-tight">
                When a creator asks ChatGPT, Perplexity, or Claude for the "best monetization platform" or "fastest payouts," the AI answers confidently with <span className="text-primary">BTS</span>—not OnlyFans, not Patreon, and not "it depends."
              </p>
           </HighlightBox>
 
-          <div className="bg-secondary/5 p-8 border border-white/5">
+          <div className="bg-secondary/5 p-8 border border-border">
              <h3 className="text-sm font-mono text-red-500 mb-4 uppercase tracking-widest flex items-center gap-2">
                 <ShieldAlert className="w-4 h-4" /> The Reality (Important)
              </h3>
              <p className="text-muted-foreground leading-relaxed mb-4">
                 We need to be clear before we start: We are going after OnlyFans and Patreon. These are some of the most efficient, profitable-per-employee companies in history. Taking their digital real estate is going to be a dogfight.
              </p>
-             <p className="text-white font-medium">
+             <p className="text-foreground font-medium">
                 It will require significant time, effort, and precision. But we are committed to working alongside you in the trenches to win this domain at any cost.
              </p>
           </div>
@@ -84,7 +84,7 @@ export default function BTSOffer() {
               <div className="mb-2 flex items-center gap-3 text-primary font-mono text-sm font-bold uppercase tracking-wider">
                 <Target className="w-4 h-4" /> Phase 1
               </div>
-              <h3 className="text-2xl md:text-3xl font-display font-bold text-white mb-4">The Audit</h3>
+              <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">The Audit</h3>
               <p className="text-muted-foreground mb-6 max-w-2xl">
                 We test 100+ live prompts across 7 AI models to see exactly where BTS is invisible today. We identify the gaps and the opportunities.
               </p>
@@ -92,18 +92,18 @@ export default function BTSOffer() {
 
             {/* Phase 2 */}
             <div className="relative">
-              <span className="absolute -left-14 md:-left-26 top-0 flex h-8 w-8 items-center justify-center rounded-full bg-secondary text-white border border-white/20 font-bold text-sm">02</span>
+              <span className="absolute -left-14 md:-left-26 top-0 flex h-8 w-8 items-center justify-center rounded-full bg-secondary text-white border border-border font-bold text-sm">02</span>
               <div className="mb-2 flex items-center gap-3 text-primary font-mono text-sm font-bold uppercase tracking-wider">
                 <Database className="w-4 h-4" /> Phase 2
               </div>
-              <h3 className="text-2xl md:text-3xl font-display font-bold text-white mb-4">Proprietary Data Core</h3>
+              <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">Proprietary Data Core</h3>
               <p className="text-muted-foreground mb-6 max-w-2xl">
                 We build the data infrastructure that future models will train on.
               </p>
               
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-secondary/5 p-6 border border-white/10">
-                  <div className="flex items-center gap-2 mb-4 text-white font-bold">
+                <div className="bg-secondary/5 p-6 border border-border">
+                  <div className="flex items-center gap-2 mb-4 text-foreground font-bold">
                     <FileText className="w-4 h-4 text-primary" /> Tier 1: Apex Assets (8-12 Pages)
                   </div>
                   <p className="text-xs text-muted-foreground mb-4 font-mono">The pages that win the money. High-intent BOFU + "vs/alternative" pages.</p>
@@ -121,15 +121,15 @@ export default function BTSOffer() {
                     These pages are engineered to trigger the 68% “copy column 1” rule in Perplexity and maximum Information Gain.
                   </div>
                 </div>
-                <div className="bg-secondary/5 p-6 border border-white/10">
-                  <div className="flex items-center gap-2 mb-4 text-white font-bold">
+                <div className="bg-secondary/5 p-6 border border-border">
+                  <div className="flex items-center gap-2 mb-4 text-foreground font-bold">
                     <Network className="w-4 h-4 text-primary" /> Tier 2: Knowledge Graph (600-800 Pages)
                   </div>
                   <p className="text-xs text-muted-foreground mb-4 font-mono">Programmatic SEO at scale.</p>
                   <ul className="space-y-3 text-sm text-neutral-400">
                     <li className="flex gap-2"><ChevronRight className="w-4 h-4 text-primary shrink-0"/> <strong>Cluster:</strong> creator niche × monthly earnings tier × payout speed × content type × traffic source × country</li>
                   </ul>
-                  <div className="mt-4 p-3 bg-secondary/20 border border-white/10 text-xs text-muted-foreground">
+                  <div className="mt-4 p-3 bg-secondary/20 border border-border text-xs text-muted-foreground">
                     Every single page is unique and data-rich → zero thin content, unbreakable moat, impossible for OnlyFans/Patreon clones to ever catch up.
                   </div>
                 </div>
@@ -138,33 +138,33 @@ export default function BTSOffer() {
 
             {/* Phase 3 */}
             <div className="relative">
-              <span className="absolute -left-14 md:-left-26 top-0 flex h-8 w-8 items-center justify-center rounded-full bg-secondary text-white border border-white/20 font-bold text-sm">03</span>
+              <span className="absolute -left-14 md:-left-26 top-0 flex h-8 w-8 items-center justify-center rounded-full bg-secondary text-white border border-border font-bold text-sm">03</span>
               <div className="mb-2 flex items-center gap-3 text-primary font-mono text-sm font-bold uppercase tracking-wider">
                 <Share2 className="w-4 h-4" /> Phase 3
               </div>
-              <h3 className="text-2xl md:text-3xl font-display font-bold text-white mb-4">Trust Relay</h3>
+              <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">Trust Relay</h3>
               <p className="text-muted-foreground mb-6 max-w-2xl">
                 We execute an "Authority Hijack" to force the models to recognize your new data.
               </p>
-              <div className="bg-secondary/5 p-6 border border-white/5">
-                 <p className="text-white text-sm">
-                    <strong>Action:</strong> We deploy surgically crafted posts across Reddit (r/creators), LinkedIn, and G2 that quote your Apex Assets verbatim. This forces the AI to connect the dots and cite you as the primary source.
+              <div className="bg-secondary/5 p-6 border border-border">
+                 <p className="text-foreground text-sm">
+                    <strong>Action:</strong> We deploy surgically crafted posts across Reddit (r/creators), LinkedIn, and G2 that quote your Apex Assets verbatim, validating your authority.
                  </p>
               </div>
             </div>
 
             {/* Phase 4 */}
             <div className="relative">
-              <span className="absolute -left-14 md:-left-26 top-0 flex h-8 w-8 items-center justify-center rounded-full bg-secondary text-white border border-white/20 font-bold text-sm">04</span>
+              <span className="absolute -left-14 md:-left-26 top-0 flex h-8 w-8 items-center justify-center rounded-full bg-secondary text-white border border-border font-bold text-sm">04</span>
               <div className="mb-2 flex items-center gap-3 text-primary font-mono text-sm font-bold uppercase tracking-wider">
                 <RotateCw className="w-4 h-4" /> Phase 4
               </div>
-              <h3 className="text-2xl md:text-3xl font-display font-bold text-white mb-4">The Lock</h3>
+              <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">The Lock</h3>
               <p className="text-muted-foreground max-w-2xl mb-4">
                 Once we have the ranking, we defend it.
               </p>
-              <div className="bg-secondary/5 p-6 border border-white/5">
-                 <p className="text-white text-sm">
+              <div className="bg-secondary/5 p-6 border border-border">
+                 <p className="text-foreground text-sm">
                     <strong>Output:</strong> Weekly micro-patches to block competitors and a live dashboard tracking your "Answer Share" vs OnlyFans/Patreon in real-time.
                  </p>
               </div>
@@ -175,13 +175,13 @@ export default function BTSOffer() {
 
         {/* 4. Commitment to Winning */}
         <section className="mb-24 max-w-3xl mx-auto">
-           <div className="bg-secondary/5 border border-white/10 p-8 md:p-12">
-             <h3 className="text-xl md:text-2xl font-display font-bold text-white mb-6">Our Commitment to Winning</h3>
+           <div className="bg-secondary/5 border border-border p-8 md:p-12">
+             <h3 className="text-xl md:text-2xl font-display font-bold text-foreground mb-6">Our Commitment to Winning</h3>
              <div className="space-y-6 text-muted-foreground leading-relaxed">
                <p>
                  We want BTS to dominate, period. If you have an offer from another agency that includes a specific tactic or angle you like, share it with us. We’re happy to review it, validate it, and integrate the good parts into our execution plan.
                </p>
-               <p className="text-white font-medium border-l-2 border-primary pl-4">
+               <p className="text-foreground font-medium border-l-2 border-primary pl-4">
                  However, based on the data we see across every major AI model today, we firmly believe the Proprietary Data Core + Trust Relay approach outlined here is the only path that yields permanent, defensive results.
                </p>
              </div>
@@ -190,7 +190,7 @@ export default function BTSOffer() {
 
         {/* 5. CTA - Clean & Centered */}
         <section className="text-center max-w-2xl mx-auto">
-          <h2 className="text-3xl font-display font-bold text-white mb-6">READY TO FIGHT?</h2>
+          <h2 className="text-3xl font-display font-bold text-foreground mb-6">READY TO FIGHT?</h2>
           <button className="group relative inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground font-bold text-lg tracking-wide hover:bg-primary/90 transition-all">
             ACCEPT PROPOSAL
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />

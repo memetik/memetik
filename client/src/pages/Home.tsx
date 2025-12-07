@@ -14,7 +14,7 @@ export default function Home() {
             
             <section id="agency" className="py-24 px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-center bg-background border-b border-border">
                 <div>
-                    <h2 className="text-4xl md:text-5xl font-display font-medium leading-tight mb-8 text-white">
+                    <h2 className="text-4xl md:text-5xl font-display font-medium leading-tight mb-8 text-foreground">
                         THE SEARCH BAR IS DYING. <br/>
                         <span className="text-muted-foreground">THE CONVERSATION IS BEGINNING.</span>
                     </h2>
@@ -33,7 +33,7 @@ export default function Home() {
             <Services />
             <MethodologySummary />
             
-            <footer className="bg-background text-white py-24 px-6 md:px-12 border-t border-border">
+            <footer className="bg-secondary text-white py-24 px-6 md:px-12 border-t border-border">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
                     <div className="col-span-1 md:col-span-2">
                         <h2 className="text-5xl md:text-8xl font-display font-bold tracking-tighter mb-8 text-white">MEMETIK</h2>
