@@ -12,7 +12,7 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
-      <Route path="/blueprint" component={Strategy} />
+      <Route path="/strategy" component={Strategy} />
       <Route path="/bts" component={BTSOffer} />
       <Route component={NotFound} />
     </Switch>

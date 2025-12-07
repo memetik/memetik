@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { ShieldAlert, Lock, Target, Database, Share2, RotateCw, CheckCircle, Zap, FileText, Network, ArrowRight, ChevronRight } from "lucide-react";
 import { Nav } from "@/components/Nav";
@@ -18,6 +19,10 @@ const HighlightBox = ({ children, className = "" }: { children: React.ReactNode,
 );
 
 export default function Strategy() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="min-h-screen w-full bg-background text-foreground selection:bg-primary selection:text-primary-foreground font-sans overflow-x-hidden">
       <Nav />
