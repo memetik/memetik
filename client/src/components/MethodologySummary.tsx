@@ -60,11 +60,8 @@ export function MethodologySummary() {
                 /{phase.id}
               </div>
 
-              {/* Title & Icon */}
+              {/* Title - Icons removed */}
               <div className="col-span-11 md:col-span-4 flex items-center gap-4">
-                <div className="p-3 bg-secondary/20 rounded-sm group-hover:bg-primary/10 transition-colors">
-                    {phase.icon}
-                </div>
                 <h3 className="text-2xl md:text-3xl font-display font-bold tracking-tight text-foreground group-hover:text-primary transition-colors">
                   {phase.title}
                 </h3>
