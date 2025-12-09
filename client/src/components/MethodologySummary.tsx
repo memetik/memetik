@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Target, Database, Share2, RotateCw, ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { Link } from "wouter";
 
 const overviewPoints = [
@@ -73,14 +73,14 @@ export function MethodologySummary() {
         <div className="inline-block px-3 py-1 bg-accent/10 text-accent font-mono text-xs font-bold mb-6 tracking-widest border border-accent/20 rounded-full">
           EXECUTION PROTOCOL
         </div>
-        <h2 className="text-5xl md:text-7xl font-display font-medium tracking-tighter text-foreground mb-8">
+        <h2 className="text-5xl md:text-8xl font-display font-bold tracking-tighter text-foreground mb-8">
           WHAT WE DO
         </h2>
         
         {/* Overview Grid */}
         <div className="flex flex-wrap justify-center gap-3 md:gap-4 max-w-4xl mt-4">
           {overviewPoints.map((point, i) => (
-            <span key={i} className="px-4 py-2 bg-secondary/5 border border-border/50 rounded-full text-sm font-mono text-muted-foreground hover:text-primary hover:border-primary/30 transition-colors cursor-default">
+            <span key={i} className="px-4 py-2 bg-secondary/5 border border-border/50 rounded-full text-xs md:text-sm font-mono text-muted-foreground hover:text-primary hover:border-primary/30 transition-colors cursor-default">
               {point}
             </span>
           ))}
