@@ -72,7 +72,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-5 mix-blend-overlay"></div>
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12 relative z-10">
                     <div className="col-span-1 md:col-span-2 space-y-8">
-                        <h2 className="text-6xl md:text-[8rem] font-display font-bold tracking-tighter leading-[0.8] text-white/90">
+                        <h2 className="text-5xl md:text-7xl font-display font-bold tracking-tighter leading-[0.8] text-white/90">
                           MEMETIK
                         </h2>
                         <p className="font-mono text-sm md:text-base text-white/60 max-w-md border-l-2 border-primary pl-6 py-2">
