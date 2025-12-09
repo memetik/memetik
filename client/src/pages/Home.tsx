@@ -76,8 +76,8 @@ export default function Home() {
                           MEMETIK
                         </h2>
                         <p className="font-mono text-sm md:text-base text-white/60 max-w-md border-l-2 border-primary pl-6 py-2">
-                          The first agency engineered for AI-native search. <br/>
-                          Win the Answer. Own the Market.
+                          Algorithmic Market Capture. <br/>
+                          We make you the default answer in ChatGPT, Claude, & Perplexity.
                         </p>
                     </div>
                     <div className="col-span-1 flex flex-col gap-6 font-mono text-sm text-white/60 pt-4">
