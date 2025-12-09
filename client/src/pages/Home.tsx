@@ -3,6 +3,7 @@ import { Hero } from "@/components/Hero";
 import { MethodologySummary } from "@/components/MethodologySummary";
 import { Marquee } from "@/components/Marquee";
 import { Services } from "@/components/Services";
+import { BrandManifesto } from "@/components/BrandManifesto";
 
 export default function Home() {
   return (
@@ -14,22 +15,28 @@ export default function Home() {
             
             <section id="agency" className="py-24 px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-center bg-background border-b border-border">
                 <div>
-                    <h2 className="text-4xl md:text-5xl font-display font-medium leading-tight mb-8 text-foreground">
-                        THE SEARCH BAR IS DYING. <br/>
-                        <span className="text-muted-foreground">THE CONVERSATION IS BEGINNING.</span>
+                    <div className="inline-block px-3 py-1 bg-primary/10 text-primary font-mono text-xs font-bold mb-6 tracking-widest border border-primary/20 rounded-full">
+                      THE SHIFT
+                    </div>
+                    <h2 className="text-4xl md:text-5xl font-display font-medium leading-tight mb-8 text-foreground uppercase">
+                        AI has collapsed search <br/>into answers.
                     </h2>
                     <div className="w-24 h-2 bg-primary mt-8"></div>
                 </div>
-                <div className="font-mono text-sm md:text-base text-muted-foreground space-y-6 leading-relaxed border-l border-border pl-6">
+                <div className="font-serif text-lg md:text-xl text-muted-foreground space-y-6 leading-relaxed border-l-2 border-primary pl-8">
                     <p>
-                        Traditional SEO focused on ranking for keywords. We focus on influencing the neural networks that now control information discovery.
+                        <span className="text-foreground font-bold">71% of commercial queries now end inside ChatGPT-style models.</span>
                     </p>
                     <p>
-                        For SaaS and Ecom brands, being the <span className="text-accent">"recommended solution"</span> in a ChatGPT conversation is the new #1 ranking. We engineer the semantic structures that ensure your brand is the answer, not just a link.
+                        Google traffic is eroding. LLMs decide winners before a user ever clicks a link. If your brand isn't in the model's answer layer—you don't exist.
+                    </p>
+                    <p className="text-foreground font-medium italic">
+                        We build Answer Engine Optimization (AEO) systems that force LLMs to cite you.
                     </p>
                 </div>
             </section>
 
+            <BrandManifesto />
             <Services />
             <MethodologySummary />
             
@@ -37,7 +44,7 @@ export default function Home() {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
                     <div className="col-span-1 md:col-span-2">
                         <h2 className="text-5xl md:text-8xl font-display font-bold tracking-tighter mb-8 text-white">MEMETIK</h2>
-                        <p className="font-mono text-sm text-muted-foreground max-w-md border-l-2 border-accent pl-4">The world's first agency dedicated to LLM SEO and Answer Engine Optimization.</p>
+                        <p className="font-mono text-sm text-muted-foreground max-w-md border-l-2 border-accent pl-4">The first agency engineered for AI-native search.</p>
                     </div>
                     <div className="col-span-1 flex flex-col gap-4 font-mono text-sm text-muted-foreground">
                         <span className="text-white font-bold mb-2">LOCATIONS</span>
