@@ -207,11 +207,11 @@ export function BrandManifesto() {
                 Our work requires <span className="text-primary font-bold">ambition</span> — and investment.
               </p>
               
-              <button className="group relative px-10 py-5 bg-foreground text-background font-mono font-bold text-lg tracking-wide overflow-hidden transition-all hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary/20 inline-flex items-center gap-3 rounded-full mt-4">
-                <div className="absolute inset-0 bg-primary translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out" />
-                <div className="relative flex items-center gap-3">
+              <button className="group relative px-8 py-4 bg-primary text-primary-foreground font-mono font-bold text-sm overflow-hidden rounded-full shadow-lg hover:shadow-primary/25 transition-all duration-300 hover:-translate-y-1 inline-flex items-center gap-2 mt-4">
+                <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out" />
+                <div className="relative flex items-center gap-2">
                   BOOK A STRATEGY CALL
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
               </button>
             </div>

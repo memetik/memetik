@@ -57,15 +57,16 @@ export function Hero() {
           </p>
           
           <div className="flex flex-wrap gap-4 mt-4">
-             <button className="group relative px-8 py-4 bg-primary text-primary-foreground font-mono font-bold text-sm overflow-hidden rounded-full shadow-lg hover:shadow-primary/25 transition-all duration-300 hover:-translate-y-0.5">
+             <button className="group relative px-8 py-4 bg-primary text-primary-foreground font-mono font-bold text-sm overflow-hidden rounded-full shadow-lg hover:shadow-primary/25 transition-all duration-300 hover:-translate-y-1">
                <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out" />
                <div className="relative flex items-center gap-2">
                  AUDIT MY AI VISIBILITY
                  <span className="text-lg group-hover:translate-x-1 transition-transform">→</span>
                </div>
              </button>
-             <button className="px-8 py-4 border border-border text-foreground font-mono font-bold text-sm hover:bg-secondary/5 transition-all duration-300 hover:border-primary/50 rounded-full backdrop-blur-sm">
-               AEO EXPLAINED
+             <button className="group relative px-8 py-4 border border-border text-foreground font-mono font-bold text-sm overflow-hidden rounded-full hover:border-primary/50 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-secondary/5">
+               <div className="absolute inset-0 bg-secondary/5 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out" />
+               <span className="relative">AEO EXPLAINED</span>
              </button>
           </div>
         </motion.div>
