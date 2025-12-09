@@ -33,8 +33,8 @@ export default function Home() {
                       transition={{ delay: 0.1 }}
                       className="text-4xl md:text-6xl font-display font-bold leading-[0.9] mb-8 text-foreground uppercase tracking-tight"
                     >
-                        AI has collapsed <br/>
-                        <span className="text-primary">search into answers.</span>
+                        The search bar is dying. <br/>
+                        <span className="text-primary">The conversation is beginning.</span>
                     </motion.h2>
                     <motion.div 
                       initial={{ scaleX: 0 }}
