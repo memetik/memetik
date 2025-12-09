@@ -1,50 +1,93 @@
 import { motion } from "framer-motion";
-import { Target, Database, Share2, RotateCw, ArrowRight } from "lucide-react";
+import { Target, Database, Share2, RotateCw, ArrowRight, CheckCircle2 } from "lucide-react";
 import { Link } from "wouter";
+
+const overviewPoints = [
+  "AEO (Answer Engine Optimization)",
+  "LLM content engineering",
+  "First-principles SEO",
+  "Parasite SEO across high-authority domains",
+  "AI automation for scale",
+  "Structured data designed for model ingestion",
+  "Authority systems that create answer-share dominance"
+];
 
 const phases = [
   {
     id: "01",
-    icon: <Target className="w-6 h-6 text-primary" />,
-    title: "CITATION VOID AUDIT",
-    description: "We run 100+ real buyer prompts across 7 engines to find where you are invisible. We deliver a Capital Allocation Roadmap naming your exact 3 'Money Entities'."
+    title: "THE LLM AUDIT",
+    subtitle: "PHASE 1",
+    description: "A complete visibility mapping across 7 major AI models. We establish your current Answer Share and identify the fastest paths to take it.",
+    deliverables: [
+      "100+ prompt tests across commercial queries",
+      "Full hallucination report & Opportunity matrix",
+      "Competitor visibility map",
+      "SERP overlap analysis"
+    ]
   },
   {
     id: "02",
-    icon: <Database className="w-6 h-6 text-primary" />,
     title: "PROPRIETARY DATA CORE",
-    description: "We build the permanent moat. Tier 1 'Apex Assets' (Flagship Content) and Tier 2 'Knowledge Graph' (Programmatic Data) that Answer Engines are forced to cite."
+    subtitle: "PHASE 2",
+    description: "We construct the data infrastructure models prefer to ingest. Tier 1 'Apex Assets' and Tier 2 'Programmatic Clusters' that force citation.",
+    deliverables: [
+      "8–12 Apex Assets (Flagship Content)",
+      "LLM-optimised comparison grids",
+      "600–800 Programmatic Data Pages",
+      "Zero filler content; engineered for long tail"
+    ]
   },
   {
     id: "03",
-    icon: <Share2 className="w-6 h-6 text-primary" />,
-    title: "TRUST RELAY NETWORK",
-    description: "We launch 12-15 surgically crafted posts across external platforms (Reddit, LinkedIn, Medium) that quote your Apex Assets verbatim, validating your authority."
+    title: "AUTHORITY INJECTION",
+    subtitle: "PHASE 3",
+    description: "We force models to recognise your data by distributing it across high-trust surfaces and validating your authority.",
+    deliverables: [
+      "Parasite SEO on Reddit, Medium, LinkedIn",
+      "50–100+ branded mentions per month",
+      "DR70–90 backlinks to Apex Assets",
+      "Link velocity campaigns"
+    ]
   },
   {
     id: "04",
-    icon: <RotateCw className="w-6 h-6 text-primary" />,
-    title: "CITATION FORCING LOOP",
-    description: "Weekly micro-patches and a live Answer Share Dashboard to track your dominance. The perpetual #1 lock that competitors cannot break."
+    title: "CONTINUOUS DEPLOYMENT",
+    subtitle: "PHASE 4",
+    description: "A long-term reinforcement system. We maintain the #1 slot across all relevant queries and prevent loss of visibility as models update.",
+    deliverables: [
+      "Weekly micro-patches to content",
+      "Continuous prompt testing",
+      "Competitor interdiction updates",
+      "Live Answer Share Dashboard"
+    ]
   }
 ];
 
 export function MethodologySummary() {
   return (
-    <section className="py-24 md:py-32 bg-background text-foreground px-6 md:px-12 border-b border-border">
-      <div className="flex flex-col items-center text-center mb-16 md:mb-24 border-b border-border pb-6">
-        <div className="inline-block px-2 py-1 bg-accent text-accent-foreground font-mono text-xs font-bold mb-4">
+    <section className="py-24 md:py-32 bg-background text-foreground px-6 md:px-12 border-b border-border relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-secondary/5 to-transparent pointer-events-none" />
+      
+      <div className="flex flex-col items-center text-center mb-20 md:mb-32 border-b border-border/50 pb-12 max-w-5xl mx-auto">
+        <div className="inline-block px-3 py-1 bg-accent/10 text-accent font-mono text-xs font-bold mb-6 tracking-widest border border-accent/20 rounded-full">
           EXECUTION PROTOCOL
         </div>
-        <h2 className="text-4xl md:text-6xl font-display font-medium tracking-tighter text-foreground mb-4">
+        <h2 className="text-5xl md:text-7xl font-display font-medium tracking-tighter text-foreground mb-8">
           WHAT WE DO
         </h2>
-        <span className="font-mono text-sm text-muted-foreground">
-          (90-DAY INFRASTRUCTURE BUILD)
-        </span>
+        
+        {/* Overview Grid */}
+        <div className="flex flex-wrap justify-center gap-3 md:gap-4 max-w-4xl mt-4">
+          {overviewPoints.map((point, i) => (
+            <span key={i} className="px-4 py-2 bg-secondary/5 border border-border/50 rounded-full text-sm font-mono text-muted-foreground hover:text-primary hover:border-primary/30 transition-colors cursor-default">
+              {point}
+            </span>
+          ))}
+        </div>
       </div>
 
-      <div className="grid grid-cols-1 gap-0 border-t border-border">
+      <div className="grid grid-cols-1 gap-0">
         {phases.map((phase, index) => (
           <motion.div
             key={phase.id}
@@ -56,43 +99,50 @@ export function MethodologySummary() {
           >
             <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
             
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center relative z-10">
-              {/* Number */}
-              <div className="col-span-1 md:col-span-1">
-                <span className="font-mono text-xl text-primary/30 group-hover:text-primary transition-colors duration-500 font-bold block transform group-hover:-translate-y-1 group-hover:scale-110 origin-left">
-                  /{phase.id}
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 relative z-10">
+              {/* Number & Subtitle */}
+              <div className="col-span-1 md:col-span-2 flex flex-col justify-start pt-2">
+                <span className="font-mono text-4xl text-primary/20 group-hover:text-primary transition-colors duration-500 font-bold block transform group-hover:-translate-y-1 origin-left">
+                  {phase.id}
+                </span>
+                <span className="text-xs font-mono tracking-widest text-muted-foreground mt-2 uppercase">
+                  {phase.subtitle}
                 </span>
               </div>
 
-              {/* Title */}
-              <div className="col-span-11 md:col-span-5 flex items-center">
+              {/* Title & Description */}
+              <div className="col-span-11 md:col-span-5 flex flex-col gap-6">
                 <h3 className="text-3xl md:text-5xl font-display font-bold tracking-tighter text-foreground group-hover:text-primary transition-colors duration-300">
                   {phase.title}
                 </h3>
+                <p className="font-serif text-muted-foreground leading-relaxed text-lg md:text-xl pr-8">
+                  {phase.description}
+                </p>
               </div>
 
-              {/* Description */}
-              <div className="col-span-12 md:col-span-5 font-serif text-muted-foreground leading-relaxed text-lg md:text-xl md:pl-8 border-l-0 md:border-l border-border/50 group-hover:border-primary/30 transition-colors duration-500">
-                <span className="group-hover:text-foreground transition-colors duration-300">
-                  {phase.description}
-                </span>
-              </div>
-              
-              {/* Arrow */}
-              <div className="col-span-12 md:col-span-1 flex justify-end items-center h-full opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-x-[-20px] group-hover:translate-x-0 hidden md:flex">
-                 <div className="p-3 rounded-full border border-primary/20 bg-background/50 backdrop-blur-sm">
-                   <ArrowRight className="w-6 h-6 text-primary -rotate-45 group-hover:rotate-0 transition-transform duration-500 cubic-bezier(0.34, 1.56, 0.64, 1)" />
-                 </div>
+              {/* Deliverables List */}
+              <div className="col-span-12 md:col-span-5 pt-2 md:pl-8 border-l-0 md:border-l border-border/50 group-hover:border-primary/30 transition-colors duration-500 flex flex-col justify-center">
+                <ul className="space-y-4">
+                  {phase.deliverables.map((item, i) => (
+                    <li key={i} className="flex items-start gap-3 text-sm md:text-base font-mono text-muted-foreground/80 group-hover:text-foreground transition-colors duration-300">
+                      <CheckCircle2 className="w-5 h-5 text-primary/50 group-hover:text-accent shrink-0 mt-0.5 transition-colors duration-300" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </motion.div>
         ))}
       </div>
       
-      <div className="mt-16 flex justify-center">
-        <Link href="/strategy" className="group flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground font-bold text-lg tracking-wide hover:bg-primary/90 transition-all inline-flex cursor-pointer">
-            VIEW FULL STRATEGY
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+      <div className="mt-24 flex justify-center">
+        <Link href="/strategy" className="group relative px-10 py-5 bg-foreground text-background font-mono font-bold text-lg tracking-wide overflow-hidden transition-all hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary/20">
+            <div className="absolute inset-0 bg-primary translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out" />
+            <div className="relative flex items-center gap-3">
+              VIEW FULL STRATEGY
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </div>
         </Link>
       </div>
     </section>
