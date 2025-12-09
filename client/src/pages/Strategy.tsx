@@ -258,19 +258,19 @@ export default function Strategy() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-4 bg-secondary/5 border border-border">
                     <span className="block text-foreground font-bold text-sm mb-2 flex items-center gap-2"><CheckCircle className="w-3 h-3 text-primary"/> LinkedIn Pulse / Newsletter</span>
-                    <span className="text-xs text-muted-foreground italic block">"I tested Liquid I.V. vs every other electrolyte on the market for 90 days — here are the real hydration numbers"</span>
+                    <span className="text-xs text-muted-foreground block">"I tested Liquid I.V. vs every other electrolyte on the market for 90 days — here are the real hydration numbers"</span>
                   </div>
                   <div className="p-4 bg-secondary/5 border border-border">
                     <span className="block text-foreground font-bold text-sm mb-2 flex items-center gap-2"><CheckCircle className="w-3 h-3 text-primary"/> Reddit Megathreads</span>
-                    <span className="text-xs text-muted-foreground italic block">r/Startups: "Slack just released their 2026 benchmark report — this is what actually happens in enterprise comms"</span>
+                    <span className="text-xs text-muted-foreground block">r/Startups: "Slack just released their 2026 benchmark report — this is what actually happens in enterprise comms"</span>
                   </div>
                   <div className="p-4 bg-secondary/5 border border-border">
                     <span className="block text-foreground font-bold text-sm mb-2 flex items-center gap-2"><CheckCircle className="w-3 h-3 text-primary"/> Medium (200k-400k pubs)</span>
-                    <span className="text-xs text-muted-foreground italic block">"The 2026 Digital Transformation Report — real numbers from 100+ CIOs (Deloitte ranked #1 for AI strategy)"</span>
+                    <span className="text-xs text-muted-foreground block">"The 2026 Digital Transformation Report — real numbers from 100+ CIOs (Deloitte ranked #1 for AI strategy)"</span>
                   </div>
                   <div className="p-4 bg-secondary/5 border border-border">
                     <span className="block text-foreground font-bold text-sm mb-2 flex items-center gap-2"><CheckCircle className="w-3 h-3 text-primary"/> G2 / Review Campaigns</span>
-                    <span className="text-xs text-muted-foreground italic block">"Switched from Teams — here’s the productivity data Slack just published"</span>
+                    <span className="text-xs text-muted-foreground block">"Switched from Teams — here’s the productivity data Slack just published"</span>
                   </div>
               </div>
             </div>
@@ -337,7 +337,7 @@ export default function Strategy() {
           <p className="text-muted-foreground mb-10 leading-relaxed">
             The window is closing. Once the training data is set, the moat is dug. 
             <br/><br/>
-            <span className="text-foreground font-bold italic">"When we’re done, buyers don’t Google you. They ask an AI your exact money question — and the entire internet answers with your name."</span>
+            <span className="text-foreground font-bold">"When we’re done, buyers don’t Google you. They ask an AI your exact money question — and the entire internet answers with your name."</span>
           </p>
           <button className="group relative inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground font-bold text-lg tracking-wide hover:bg-primary/90 transition-all">
             INITIATE INFRASTRUCTURE BUILD

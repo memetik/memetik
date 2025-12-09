@@ -50,7 +50,7 @@ export default function Home() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.2 }}
-                  className="font-serif text-lg md:text-2xl text-muted-foreground space-y-8 leading-relaxed border-l-2 border-primary/20 pl-8 relative z-10"
+                  className="font-sans text-lg md:text-2xl text-muted-foreground space-y-8 leading-relaxed border-l-2 border-primary/20 pl-8 relative z-10"
                 >
                     <p>
                         <span className="text-foreground font-bold highlight-text bg-gradient-to-r from-primary/20 to-transparent bg-no-repeat bg-[length:100%_0.4em] bg-bottom">71% of commercial queries now end inside ChatGPT-style models.</span>
@@ -58,7 +58,7 @@ export default function Home() {
                     <p>
                         Google traffic is eroding. LLMs decide winners before a user ever clicks a link. If your brand isn't in the model's answer layer—you don't exist.
                     </p>
-                    <p className="text-foreground font-medium italic">
+                    <p className="text-foreground font-medium">
                         We build Answer Engine Optimization (AEO) systems that force LLMs to cite you.
                     </p>
                 </motion.div>

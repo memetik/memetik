@@ -24,8 +24,8 @@
   --color-input: hsl(var(--input));
   --color-ring: hsl(var(--ring));
   
-  --font-sans: 'Newsreader', 'Times New Roman', serif;
-  --font-display: 'Geist Sans', 'Geist', 'Inter', sans-serif;
+  --font-sans: 'Inter', 'Geist Sans', sans-serif;
+  --font-display: 'Inter', 'Geist Sans', sans-serif;
   --font-mono: 'Geist Mono', 'Consolas', monospace;
   
   --radius: 9999px;

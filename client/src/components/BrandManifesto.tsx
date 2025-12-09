@@ -27,13 +27,13 @@ export function BrandManifesto() {
             <h2 className="text-4xl md:text-7xl font-display font-bold leading-[0.9] mb-8 tracking-tighter">
               THE INDUSTRY <br/><span className="text-muted-foreground">IS BROKEN.</span>
             </h2>
-            <div className="font-serif text-xl md:text-3xl text-muted-foreground space-y-8 leading-relaxed border-l-2 border-primary pl-8 md:pl-12">
+            <div className="font-sans text-xl md:text-3xl text-muted-foreground space-y-8 leading-relaxed border-l-2 border-primary pl-8 md:pl-12">
               <p>
                 Founders are paying "SEO agencies" who deliver nothing of value.
                 Search is changing faster than agencies can keep up.
                 Most still sell the same packages they offered in 2015.
               </p>
-              <p className="text-foreground font-medium italic">
+              <p className="text-foreground font-medium">
                 Memetik was built as the antidote.
               </p>
             </div>
@@ -165,7 +165,7 @@ export function BrandManifesto() {
                 className="p-10 bg-background border border-border hover:border-primary/30 transition-all duration-300 shadow-sm hover:shadow-lg flex flex-col items-center justify-center min-h-[240px] text-center group"
               >
                 <div className="w-16 h-1 bg-primary/20 group-hover:bg-primary transition-colors mb-8"></div>
-                <p className="font-serif text-lg md:text-xl leading-relaxed group-hover:text-foreground transition-colors">{item}</p>
+                <p className="font-sans text-lg md:text-xl leading-relaxed group-hover:text-foreground transition-colors">{item}</p>
               </motion.div>
             ))}
           </div>
@@ -179,7 +179,7 @@ export function BrandManifesto() {
               <p className="font-mono text-xs text-primary mb-6 uppercase tracking-[0.2em] font-bold">The Requirement</p>
               <p className="text-xl md:text-3xl font-display font-medium text-foreground leading-tight">
                 We do not work with unqualified or low-budget companies. <br/>
-                Our work requires <span className="text-primary font-bold italic">ambition</span> — and investment.
+                Our work requires <span className="text-primary font-bold">ambition</span> — and investment.
               </p>
             </div>
           </div>
