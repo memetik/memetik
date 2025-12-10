@@ -204,7 +204,7 @@ export function BrandManifesto() {
               <p className="font-mono text-xs text-primary mb-6 uppercase tracking-[0.2em] font-bold">The Requirement</p>
               <p className="text-xl md:text-4xl font-display font-medium text-foreground leading-tight mb-8">
                 We do not work with unqualified or low-budget companies. <br className="hidden md:block"/>
-                Our work requires <span className="text-primary font-bold">ambition</span> — and investment.
+                Our work requires <span className="text-primary font-bold">ambition</span>.
               </p>
               
               <button className="group relative px-8 py-4 bg-primary text-primary-foreground font-mono font-bold text-sm overflow-hidden rounded-full shadow-lg hover:shadow-primary/25 transition-all duration-300 hover:-translate-y-1 inline-flex items-center gap-2 mt-4">
