@@ -19,7 +19,7 @@ export function Nav() {
 
   const links = [
     { href: "#work", label: "WORK" },
-    { href: "#agency", label: "AGENCY" },
+    { href: "#agency", label: "GROWTH PARTNER" },
     { href: "#contact", label: "CONTACT" },
   ];
 
