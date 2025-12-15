@@ -99,7 +99,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="mt-32 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center font-mono text-xs text-white/40 gap-4">
-                    <span>© 2025 MEMETIK AGENCY // ALL RIGHTS RESERVED</span>
+                    <span>© 2025 MEMETIK // ALL RIGHTS RESERVED</span>
                     <span className="flex items-center gap-3 px-4 py-2 bg-white/5 rounded-full border border-white/5">
                        <span className="relative flex h-2 w-2">
                           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
