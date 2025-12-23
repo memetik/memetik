@@ -26,10 +26,10 @@ export function Hero() {
            {/* Badge removed as requested */}
            
           <h1 className="text-6xl md:text-8xl lg:text-[10rem] font-display font-bold leading-[0.8] tracking-tighter text-foreground drop-shadow-sm select-none">
-            OWN THE
+            Be the brand
             <br />
             <span className="text-primary relative inline-block">
-              AI ANSWER.
+              AI recommends
             </span>
           </h1>
         </div>
