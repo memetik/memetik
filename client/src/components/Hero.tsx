@@ -55,14 +55,6 @@ export function Hero() {
         </div>
       </div>
       
-      {/* Scroll Indicator */}
-      <motion.div 
-        style={{ opacity }}
-        className="absolute bottom-12 left-6 md:left-12 text-xs font-mono text-muted-foreground flex items-center gap-3"
-      >
-        <div className="w-px h-16 bg-gradient-to-b from-primary to-transparent"></div>
-        <span className="writing-vertical-lr">SCROLL TO EXPLORE</span>
-      </motion.div>
     </section>
   );
 }
