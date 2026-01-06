@@ -48,14 +48,14 @@ export function Hero() {
              <div className="h-[1px] flex-grow bg-foreground/30"></div>
           </div>
 
-          <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-display font-black leading-[0.85] tracking-tighter text-foreground drop-shadow-sm select-none uppercase mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-display font-black leading-[0.85] tracking-tighter text-foreground drop-shadow-sm select-none uppercase mb-6 break-words">
             Be the Brand <br/>
             AI recommends.
           </h1>
           
           <div className="w-full border-b border-foreground mb-8"></div>
 
-          <p className="text-2xl md:text-4xl font-serif text-foreground leading-tight tracking-tight mb-12">
+          <p className="text-xl sm:text-2xl md:text-4xl font-serif text-foreground leading-tight tracking-tight mb-12">
             We engineer visibility across LLMs, search engines, and agents.
           </p>
           

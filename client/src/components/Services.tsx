@@ -106,7 +106,7 @@ export function Services() {
       </div>
 
       <div className="w-full border-t-2 border-foreground">
-        <div className="max-w-[1920px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-0 bg-foreground">
+        <div className="max-w-[1920px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-0 bg-background md:bg-foreground">
             {services.map((service, index) => (
             <ServiceCard key={index} service={service} index={index} />
             ))}
