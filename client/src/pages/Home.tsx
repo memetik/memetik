@@ -109,7 +109,7 @@ export default function Home() {
             </div>
             
             {/* Main Title */}
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-black tracking-tight uppercase mb-2">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-black tracking-tight uppercase mb-2 text-background">
               MEMETIK
             </h2>
             <p className="font-serif text-lg sm:text-xl md:text-2xl text-background/60 mb-6">
