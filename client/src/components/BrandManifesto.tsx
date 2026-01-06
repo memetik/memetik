@@ -15,11 +15,11 @@ export function BrandManifesto() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
             {/* Left - Main Statement */}
             <div>
-              <h2 className="text-4xl sm:text-5xl md:text-7xl font-display font-black leading-[0.85] mb-2 tracking-tight uppercase text-foreground">
-                BROKEN
+              <h2 className="text-3xl sm:text-4xl md:text-6xl font-display font-black leading-[0.85] mb-2 tracking-tight uppercase text-foreground">
+                The Industry Is Broken.
               </h2>
-              <p className="font-serif text-xl sm:text-2xl md:text-3xl italic text-foreground mb-6">
-                The Industry Status Quo
+              <p className="font-serif text-lg sm:text-xl md:text-2xl italic text-foreground/60 mb-6">
+                Memetik was built as the antidote.
               </p>
               
               <div className="space-y-4 font-mono text-sm leading-relaxed text-foreground/70 mb-6">
@@ -41,7 +41,7 @@ export function BrandManifesto() {
                   THE ANTIDOTE
                 </div>
                 <div className="border-2 border-foreground px-3 py-1.5 font-mono text-[10px] font-bold uppercase tracking-wider">
-                  MEMETIK
+                  FIRST PRINCIPLES
                 </div>
               </div>
             </div>
@@ -91,11 +91,11 @@ export function BrandManifesto() {
             &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
           </div>
           
-          <h2 className="text-4xl sm:text-5xl md:text-7xl font-display font-black tracking-tight uppercase mb-2">
-            VALUES
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-display font-black tracking-tight uppercase mb-2">
+            Our Values
           </h2>
-          <p className="font-serif text-xl sm:text-2xl md:text-3xl italic text-foreground mb-6">
-            For Operational Dominance
+          <p className="font-serif text-lg sm:text-xl md:text-2xl italic text-foreground/60 mb-6">
+            The operating system for dominance.
           </p>
           
           {/* Certification + Location */}
@@ -139,11 +139,11 @@ export function BrandManifesto() {
             &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
           </div>
           
-          <h2 className="text-4xl sm:text-5xl md:text-7xl font-display font-black tracking-tight uppercase mb-2">
-            OPERATORS
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-display font-black tracking-tight uppercase mb-2">
+            Who We Serve
           </h2>
-          <p className="font-serif text-xl sm:text-2xl md:text-3xl italic text-foreground mb-6">
-            For Ambitious Founders
+          <p className="font-serif text-lg sm:text-xl md:text-2xl italic text-foreground/60 mb-6">
+            We partner with founders who refuse to be left behind.
           </p>
           
           {/* Certification + Location */}

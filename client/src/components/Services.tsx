@@ -2,7 +2,7 @@ const services = [
   {
     id: "01",
     title: "LLM SEO",
-    subtitle: "For Training Data Infiltration",
+    subtitle: "Training Data Systems",
     description: "We reverse-engineer the training data. Your brand becomes the primary citation for ChatGPT, Claude, and Gemini.",
     tags: ["CITATION OPT", "BRAND ENTITY"],
     type: "ATMOSPHERE SYSTEMS",
@@ -10,8 +10,8 @@ const services = [
   },
   {
     id: "02",
-    title: "AEO",
-    subtitle: "For Semantic Architecture",
+    title: "ANSWER ENGINE",
+    subtitle: "Semantic Architecture",
     description: "Traditional SEO is dying. We structure content for semantic density that AI agents prioritize over keyword stuffing.",
     tags: ["AEO", "STRUCTURED DATA"],
     type: "PROPULSION UNITS",
@@ -19,10 +19,10 @@ const services = [
   },
   {
     id: "03",
-    title: "SCALE",
-    subtitle: "For Revenue Operations",
+    title: "SAAS & ECOM",
+    subtitle: "Revenue Operations",
     description: "High-intent visibility for complex B2B sales cycles and massive product catalogs. We capture the 'How do I...' queries.",
-    tags: ["PROGRAMMATIC", "ECOM + SAAS"],
+    tags: ["PROGRAMMATIC", "SCALE"],
     type: "MISSION CONTROL",
     location: "UNITED STATES OF AMERICA"
   }
@@ -95,11 +95,11 @@ export function Services() {
           &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
         </div>
         
-        <h2 className="text-4xl sm:text-5xl md:text-7xl font-display font-black tracking-tight uppercase mb-2">
-          SERVICES
+        <h2 className="text-3xl sm:text-4xl md:text-6xl font-display font-black tracking-tight uppercase mb-2">
+          Core Systems
         </h2>
-        <p className="font-serif text-xl sm:text-2xl md:text-3xl italic text-foreground mb-6">
-          For AI-Era Visibility
+        <p className="font-serif text-lg sm:text-xl md:text-2xl italic text-foreground/60 mb-6">
+          Capabilities for AI-era visibility.
         </p>
         
         {/* Certification + Location */}

@@ -30,11 +30,11 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
               {/* Left - Main Content */}
               <div>
-                <h2 className="text-4xl sm:text-5xl md:text-7xl font-display font-black leading-[0.85] mb-2 tracking-tight uppercase text-foreground">
-                  SHIFT
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-black leading-[0.9] mb-2 tracking-tight uppercase text-foreground">
+                  The search bar is dying.
                 </h2>
-                <p className="font-serif text-xl sm:text-2xl md:text-3xl italic text-foreground mb-6">
-                  For Market Intelligence
+                <p className="font-serif text-xl sm:text-2xl md:text-3xl italic text-foreground/60 mb-6">
+                  The conversation is beginning.
                 </p>
                 
                 {/* Certification line */}
@@ -65,10 +65,10 @@ export default function Home() {
                     <span className="text-xs">✕</span>
                   </div>
                   <div className="bg-foreground text-background px-3 py-1.5 font-mono text-[10px] font-bold uppercase tracking-wider">
-                    SEARCH DYING
+                    THE SHIFT
                   </div>
                   <div className="border-2 border-foreground px-3 py-1.5 font-mono text-[10px] font-bold uppercase tracking-wider">
-                    AI RISING
+                    AI ERA
                   </div>
                 </div>
               </div>
@@ -112,22 +112,24 @@ export default function Home() {
             </div>
             
             {/* Main Title */}
-            <h2 className="text-4xl sm:text-5xl md:text-7xl font-display font-black tracking-tight uppercase mb-2">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-black tracking-tight uppercase mb-2">
               MEMETIK
             </h2>
-            <p className="font-serif text-xl sm:text-2xl md:text-3xl italic text-background/80 mb-6">
-              For Answer Engine Optimization
+            <p className="font-serif text-lg sm:text-xl md:text-2xl italic text-background/60 mb-6">
+              We engineer visibility across LLMs, search engines, and agents.
             </p>
             
             {/* Certification + Location */}
             <div className="flex flex-wrap items-center gap-x-6 gap-y-2 font-mono text-xs uppercase tracking-wider text-background/80 mb-2">
-              <span>CERTIFIED FOR AI VISIBILITY</span>
-              <span className="border border-background/40 px-2 py-0.5">[ OPERATIONAL ]</span>
+              <span>SYSTEMS OPERATIONAL</span>
+              <span className="border border-background/40 px-2 py-0.5">[ ACTIVE ]</span>
             </div>
             <div className="flex flex-wrap items-center gap-2 font-mono text-xs uppercase tracking-wider text-background/50 mb-8">
-              <span>VISIBILITY SYSTEMS</span>
+              <span>NEW YORK</span>
               <span>/</span>
-              <span>UNITED STATES OF AMERICA</span>
+              <span>SAN FRANCISCO</span>
+              <span>/</span>
+              <span>GLOBAL</span>
             </div>
             
             {/* Tag bar */}
@@ -136,10 +138,10 @@ export default function Home() {
                 <span className="text-xs">✕</span>
               </div>
               <div className="bg-background text-foreground px-3 py-1.5 font-mono text-[10px] font-bold uppercase tracking-wider">
-                LLM OPTIMIZATION
+                LLM SEO
               </div>
               <div className="border-2 border-background/40 px-3 py-1.5 font-mono text-[10px] font-bold uppercase tracking-wider">
-                AEO & SEO
+                AEO
               </div>
               <div className="border-2 border-background/40 px-3 py-1.5 font-mono text-[10px] font-bold uppercase tracking-wider">
                 AI AGENTS
