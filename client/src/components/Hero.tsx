@@ -38,7 +38,7 @@ export function Hero() {
             <span>&gt;&gt;&gt; USA</span>
           </div>
 
-          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-display font-bold leading-[0.85] tracking-tighter text-foreground drop-shadow-sm select-none uppercase">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-display font-bold leading-[0.85] tracking-tighter text-foreground drop-shadow-sm select-none uppercase">
             Be the Brand <br/>
             <span className="text-primary relative inline-block">
               AI recommends
