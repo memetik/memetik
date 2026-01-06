@@ -26,12 +26,6 @@ export function BrandManifesto() {
                 <p>Founders are paying "SEO agencies" who deliver nothing of value. Search is changing faster than agencies can keep up.</p>
               </div>
               
-              {/* Certification line */}
-              <div className="flex flex-wrap items-center gap-x-4 gap-y-2 font-mono text-xs uppercase tracking-wider text-foreground mb-6">
-                <span>INDUSTRY ANALYSIS</span>
-                <span className="border border-foreground px-2 py-0.5">[ VERIFIED ]</span>
-              </div>
-              
               {/* Tag bar */}
               <div className="flex flex-wrap items-center gap-2">
                 <div className="border-2 border-foreground px-3 py-1.5 font-mono text-[10px] font-bold uppercase tracking-wider">
