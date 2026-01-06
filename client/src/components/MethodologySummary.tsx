@@ -90,7 +90,7 @@ function PhaseCard({ phase, index }: { phase: typeof phases[0], index: number })
           </div>
         </div>
         
-        <h3 className="text-4xl md:text-5xl font-display font-black leading-[0.9] tracking-tighter text-foreground mb-8 uppercase">
+        <h3 className="text-2xl sm:text-3xl md:text-5xl font-display font-black leading-[0.9] tracking-tighter text-foreground mb-8 uppercase">
           {phase.title}
         </h3>
 
@@ -126,7 +126,7 @@ export function MethodologySummary() {
                 &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
            </div>
            
-           <h2 className="text-5xl md:text-8xl font-display font-black tracking-tighter text-foreground mb-8 uppercase">
+           <h2 className="text-3xl sm:text-4xl md:text-8xl font-display font-black tracking-tighter text-foreground mb-8 uppercase">
              Methodology
            </h2>
            <div className="h-[2px] w-full bg-foreground mb-12"></div>

@@ -13,7 +13,7 @@ export function BrandManifesto() {
                 &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
              </div>
              
-            <h2 className="text-5xl md:text-8xl font-display font-black leading-[0.8] mb-8 tracking-tighter uppercase text-foreground">
+            <h2 className="text-3xl sm:text-4xl md:text-8xl font-display font-black leading-[0.8] mb-8 tracking-tighter uppercase text-foreground">
               THE INDUSTRY <br/><span className="text-muted-foreground">IS BROKEN.</span>
             </h2>
             <div className="font-serif text-2xl md:text-4xl text-foreground space-y-8 leading-tight">
@@ -76,7 +76,7 @@ export function BrandManifesto() {
                <div className="w-full overflow-hidden whitespace-nowrap mb-6 select-none opacity-40 font-mono text-[10px] tracking-tighter font-bold text-[#E3E7DE]">
                 &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
              </div>
-              <h2 className="text-4xl md:text-8xl font-display font-black mb-4 tracking-tighter text-[#E3E7DE] uppercase">OUR VALUES</h2>
+              <h2 className="text-3xl sm:text-4xl md:text-8xl font-display font-black mb-4 tracking-tighter text-[#E3E7DE] uppercase">OUR VALUES</h2>
             </div>
             <p className="font-mono text-sm md:text-base text-[#E3E7DE]/60 tracking-widest uppercase md:mb-4">The Operating System for Dominance</p>
           </div>
@@ -104,7 +104,7 @@ export function BrandManifesto() {
                 key={i} 
                 className="p-8 md:p-10 border-r border-b border-[#E3E7DE]/20 transition-all duration-300 group bg-[#E3E7DE] text-foreground"
               >
-                <div className="text-5xl md:text-7xl font-display font-bold transition-colors mb-12 text-foreground/20">0{i+1}</div>
+                <div className="text-4xl md:text-7xl font-display font-bold transition-colors mb-12 text-foreground/20">0{i+1}</div>
                 <h3 className="text-xl font-bold mb-4 tracking-tight uppercase">{value.title}</h3>
                 <p className="leading-relaxed text-sm font-mono opacity-80">{value.desc}</p>
               </div>
@@ -117,7 +117,7 @@ export function BrandManifesto() {
       <div className="py-24 md:py-32 px-6 md:px-12 border-b-2 border-foreground bg-background relative">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-24">
-             <h2 className="text-4xl md:text-7xl font-display font-black mb-8 tracking-tighter uppercase">WHO WE SERVE</h2>
+             <h2 className="text-3xl sm:text-4xl md:text-7xl font-display font-black mb-8 tracking-tighter uppercase">WHO WE SERVE</h2>
              <p className="font-serif text-2xl md:text-3xl text-foreground max-w-2xl mx-auto">We partner with founders who refuse to be left behind.</p>
           </div>
           

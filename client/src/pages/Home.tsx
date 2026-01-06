@@ -31,7 +31,7 @@ export default function Home() {
                           THE SHIFT
                         </div>
                         <h2 
-                          className="text-5xl md:text-7xl font-display font-black leading-[0.85] mb-8 text-foreground uppercase tracking-tighter"
+                          className="text-3xl sm:text-4xl md:text-7xl font-display font-black leading-[0.85] mb-8 text-foreground uppercase tracking-tighter"
                         >
                             The search bar is dying. <br/>
                             <span className="text-foreground/50">The conversation is beginning.</span>
@@ -69,7 +69,7 @@ export default function Home() {
 
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-12 relative z-10">
                         <div className="col-span-1 md:col-span-2 space-y-8">
-                            <h2 className="text-4xl md:text-9xl font-display font-black tracking-tighter leading-[0.8] text-[#E3E7DE] uppercase">
+                            <h2 className="text-3xl sm:text-5xl md:text-9xl font-display font-black tracking-tighter leading-[0.8] text-[#E3E7DE] uppercase">
                               MEMETIK
                             </h2>
                             <p className="font-serif text-lg md:text-2xl text-[#E3E7DE]/80 max-w-md border-l-2 border-[#E3E7DE]/30 pl-6 py-2 leading-tight">

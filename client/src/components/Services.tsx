@@ -44,7 +44,7 @@ function ServiceCard({ service, index }: { service: typeof services[0], index: n
 
       {/* Heavy Black Header */}
       <div className="bg-foreground p-4 md:p-6 mb-6 transform group-hover:-translate-y-1 transition-transform duration-300">
-          <h3 className="text-4xl md:text-5xl font-display font-black leading-[0.85] tracking-tighter uppercase text-[#E3E7DE]">
+          <h3 className="text-2xl sm:text-3xl md:text-5xl font-display font-black leading-[0.85] tracking-tighter uppercase text-[#E3E7DE]">
             {service.title}
           </h3>
       </div>
@@ -100,7 +100,7 @@ export function Services() {
              <span className="font-mono font-bold text-sm tracking-widest text-foreground uppercase">CAPABILITIES</span>
              <div className="h-[1px] flex-grow bg-foreground/30"></div>
           </div>
-          <h2 className="text-5xl md:text-8xl font-display font-black tracking-tighter text-foreground uppercase mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-8xl font-display font-black tracking-tighter text-foreground uppercase mb-4">
              Core Systems
           </h2>
       </div>
