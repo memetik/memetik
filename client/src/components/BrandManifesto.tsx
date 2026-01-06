@@ -102,11 +102,11 @@ export function BrandManifesto() {
             ].map((value, i) => (
               <div 
                 key={i} 
-                className={`p-8 md:p-10 border-r border-b border-[#E3E7DE]/20 transition-all duration-300 group ${i === 0 ? 'bg-[#E3E7DE] text-foreground' : 'hover:bg-[#E3E7DE] hover:text-foreground'}`}
+                className={`p-8 md:p-10 border-r border-b border-[#E3E7DE]/20 transition-all duration-300 group ${i === 0 ? 'bg-[#E3E7DE] text-foreground' : 'bg-transparent text-[#E3E7DE]'}`}
               >
-                <div className={`text-5xl md:text-7xl font-display font-bold transition-colors mb-12 ${i === 0 ? 'text-foreground/20' : 'text-[#E3E7DE]/20 group-hover:text-foreground/20'}`}>0{i+1}</div>
+                <div className={`text-5xl md:text-7xl font-display font-bold transition-colors mb-12 ${i === 0 ? 'text-foreground/20' : 'text-[#E3E7DE]/20'}`}>0{i+1}</div>
                 <h3 className="text-xl font-bold mb-4 tracking-tight uppercase">{value.title}</h3>
-                <p className="leading-relaxed text-sm font-mono opacity-80">{value.desc}</p>
+                <p className={`leading-relaxed text-sm font-mono ${i === 0 ? 'opacity-80' : 'opacity-60'}`}>{value.desc}</p>
               </div>
             ))}
           </div>
