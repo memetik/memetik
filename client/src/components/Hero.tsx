@@ -21,7 +21,7 @@ export function Hero() {
       {/* Subtle data grid instead of construction lines */}
       <div className="absolute inset-0 z-0 bg-[linear-gradient(to_right,var(--color-primary)_1px,transparent_1px),linear-gradient(to_bottom,var(--color-primary)_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-[0.03]"></div>
 
-      <div className="relative z-10 container px-6 md:px-12 flex flex-col gap-10 pt-32">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-12 flex flex-col gap-10 pt-32 overflow-hidden">
         {/* Decorative 'Stamp' Container - Hidden on small screens, can keep or remove if we want to mimic the image exactly. 
             The image doesn't show this 'LAB' stamp in the same place, but I will keep it for now as "cool brand stuff" unless it conflicts. 
             Actually, the image shows a cleaner top area. I'll comment it out to match the clean reference more. */}
@@ -32,7 +32,7 @@ export function Hero() {
             </div>
         </div> */}
 
-        <div className="max-w-5xl relative mx-auto text-center md:text-left md:mx-0">
+        <div className="w-full max-w-5xl relative mx-auto text-center md:text-left md:mx-0 overflow-hidden">
           
           {/* Chevron Pattern */}
           <div className="w-full overflow-hidden whitespace-nowrap mb-2 select-none opacity-80" aria-hidden="true">
@@ -59,25 +59,16 @@ export function Hero() {
             We engineer visibility across LLMs, search engines, and agents.
           </p>
           
-          <div className="flex flex-col md:flex-row gap-0 border-2 border-foreground bg-foreground text-background">
-             <div className="flex items-center justify-center p-4 border-b md:border-b-0 md:border-r border-background/20 relative group cursor-default bg-[#111] text-[#E3E7DE]">
-                <div className="w-8 h-8 border border-[#E3E7DE] flex items-center justify-center relative">
-                   <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="w-[120%] h-[1px] bg-[#E3E7DE] rotate-45"></div>
-                      <div className="w-[120%] h-[1px] bg-[#E3E7DE] -rotate-45"></div>
-                   </div>
-                </div>
-             </div>
-             
-             <div className="flex-1 flex items-center justify-center p-4 border-b md:border-b-0 md:border-r border-background/20 font-mono text-sm md:text-base font-bold tracking-wider uppercase hover:bg-background/10 transition-colors cursor-default bg-[#111] text-[#E3E7DE]">
+          <div className="flex flex-col gap-0 border-2 border-foreground bg-[#111] text-[#E3E7DE]">
+             <div className="flex items-center justify-center p-3 sm:p-4 border-b border-background/20 font-mono text-xs sm:text-sm font-bold tracking-wider uppercase">
                 LLM OPTIMIZATION
              </div>
              
-             <div className="flex-1 flex items-center justify-center p-4 border-b md:border-b-0 md:border-r border-background/20 font-mono text-sm md:text-base font-bold tracking-wider uppercase hover:bg-background/10 transition-colors cursor-default bg-[#111] text-[#E3E7DE]">
+             <div className="flex items-center justify-center p-3 sm:p-4 border-b border-background/20 font-mono text-xs sm:text-sm font-bold tracking-wider uppercase">
                 SEARCH ENGINE OPS
              </div>
              
-             <div className="flex-1 flex items-center justify-center p-4 font-mono text-sm md:text-base font-bold tracking-wider uppercase hover:bg-background/10 transition-colors cursor-default bg-[#111] text-[#E3E7DE]">
+             <div className="flex items-center justify-center p-3 sm:p-4 font-mono text-xs sm:text-sm font-bold tracking-wider uppercase">
                 AI INTEGRATION
              </div>
           </div>
