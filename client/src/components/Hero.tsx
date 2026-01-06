@@ -16,38 +16,14 @@ export function Hero() {
           RECOMMENDS
         </h1>
         
-        {/* Subtitle */}
-        <p className="font-serif text-xl sm:text-2xl md:text-3xl text-foreground mb-8">
-          The future is one direct answer.
-        </p>
-
-        {/* Certification line */}
-        <div className="flex flex-wrap items-center gap-x-6 gap-y-2 font-mono text-xs sm:text-sm uppercase tracking-wider text-foreground mb-3">
-          <span>CERTIFIED FOR AI VISIBILITY</span>
-          <span className="border border-foreground px-2 py-0.5">[ TESTED ]</span>
-        </div>
-
-        {/* System / Location label */}
-        <div className="flex flex-wrap items-center gap-x-4 gap-y-2 font-mono text-xs sm:text-sm uppercase tracking-wider text-foreground/60 mb-10">
-          <span>VISIBILITY SYSTEMS</span>
-          <span>/</span>
-          <span>UNITED STATES OF AMERICA</span>
-        </div>
-
-        {/* Bottom tag bar - FUEL style */}
-        <div className="flex flex-wrap items-center gap-2 mb-12">
-          <div className="flex items-center justify-center w-10 h-10 bg-foreground text-background">
-            <span className="text-lg">✕</span>
-          </div>
-          <div className="bg-foreground text-background px-4 py-2.5 font-mono text-xs sm:text-sm font-bold uppercase tracking-wider">
-            LLM OPTIMIZATION
-          </div>
-          <div className="border-2 border-foreground px-4 py-2 font-mono text-xs sm:text-sm font-bold uppercase tracking-wider">
-            AEO & SEO
-          </div>
-          <div className="border-2 border-foreground px-4 py-2 font-mono text-xs sm:text-sm font-bold uppercase tracking-wider">
-            AI AGENTS
-          </div>
+        {/* Tagline */}
+        <div className="mb-12 max-w-xl">
+          <p className="font-serif text-xl sm:text-2xl md:text-3xl text-foreground mb-2">
+            The future is one direct answer.
+          </p>
+          <p className="font-mono text-sm sm:text-base text-foreground/70">
+            We engineer visibility across LLMs, search engines, and agents.
+          </p>
         </div>
 
         {/* CTA */}
