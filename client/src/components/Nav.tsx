@@ -1,7 +1,6 @@
 import { Link } from "wouter";
 import { Menu, X, Sun, Moon } from "lucide-react";
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import { useTheme } from "@/components/theme-provider";
 
 export function Nav() {
@@ -40,9 +39,11 @@ export function Nav() {
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center h-20">
         <Link href="/">
           <a className="flex items-center gap-4 group relative z-50">
-             {/* Logo Mark */}
-             <div className="w-10 h-10 border-2 border-primary flex items-center justify-center bg-primary text-background font-display font-bold text-xl group-hover:bg-background group-hover:text-primary transition-colors">
-               M
+             {/* Logo Mark - M Shape */}
+             <div className="w-10 h-10 bg-foreground text-background flex items-center justify-center group-hover:bg-foreground/90 transition-colors">
+               <svg viewBox="0 0 100 80" fill="currentColor" className="w-6 h-6">
+                 <path d="M0 0 H30 V80 H20 V25 H10 V80 H0 Z M35 25 L50 45 L65 25 V0 H35 Z M70 0 H100 V80 H90 V25 H80 V80 H70 Z" />
+               </svg>
              </div>
              <div className="flex flex-col">
                <span className="font-display font-bold text-2xl tracking-tighter text-foreground leading-none">MEMETIK</span>
