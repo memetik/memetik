@@ -44,17 +44,6 @@ export default function Home() {
                   The conversation is beginning.
                 </p>
                 
-                {/* Certification line */}
-                <div className="flex flex-wrap items-center gap-x-4 gap-y-2 font-mono text-xs uppercase tracking-wider text-foreground mb-2">
-                  <span>CRITICAL INTELLIGENCE</span>
-                  <span className="border border-foreground px-2 py-0.5">[ VERIFIED ]</span>
-                </div>
-                <div className="flex flex-wrap items-center gap-2 font-mono text-xs uppercase tracking-wider text-foreground/60 mb-8">
-                  <span>MARKET ANALYSIS</span>
-                  <span>/</span>
-                  <span>UNITED STATES OF AMERICA</span>
-                </div>
-                
                 {/* Stats Box */}
                 <div className="border-2 border-foreground p-6 mb-6">
                   <div className="flex items-baseline gap-2 mb-2">
@@ -104,8 +93,10 @@ export default function Home() {
         </section>
 
         <BrandManifesto />
+        {/* HIDDEN FOR NOW - Restore later
         <Testimonials />
         <CaseStudies />
+        */}
         <Services />
         <MethodologySummary />
         <FAQ />
@@ -136,33 +127,59 @@ export default function Home() {
               </p>
             </div>
             
-            {/* Footer Info */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-end">
+            {/* Footer Links */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
               <div>
-                <h3 className="text-2xl sm:text-3xl font-display font-black tracking-tight uppercase mb-2 text-background">
+                <h4 className="font-mono text-xs uppercase tracking-wider text-background/40 mb-4">Company</h4>
+                <ul className="space-y-2">
+                  <li><a href="#" className="font-mono text-sm text-background/70 hover:text-background transition-colors">About</a></li>
+                  <li><a href="#" className="font-mono text-sm text-background/70 hover:text-background transition-colors">Careers</a></li>
+                  <li><a href="#" className="font-mono text-sm text-background/70 hover:text-background transition-colors">Contact</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-mono text-xs uppercase tracking-wider text-background/40 mb-4">Services</h4>
+                <ul className="space-y-2">
+                  <li><a href="#methodology" className="font-mono text-sm text-background/70 hover:text-background transition-colors">Process</a></li>
+                  <li><a href="#faq" className="font-mono text-sm text-background/70 hover:text-background transition-colors">FAQ</a></li>
+                  <li><a href="#" className="font-mono text-sm text-background/70 hover:text-background transition-colors">Case Studies</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-mono text-xs uppercase tracking-wider text-background/40 mb-4">Resources</h4>
+                <ul className="space-y-2">
+                  <li><a href="#" className="font-mono text-sm text-background/70 hover:text-background transition-colors">Blog</a></li>
+                  <li><a href="#" className="font-mono text-sm text-background/70 hover:text-background transition-colors">Research</a></li>
+                  <li><a href="#" className="font-mono text-sm text-background/70 hover:text-background transition-colors">Newsletter</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-mono text-xs uppercase tracking-wider text-background/40 mb-4">Legal</h4>
+                <ul className="space-y-2">
+                  <li><a href="#" className="font-mono text-sm text-background/70 hover:text-background transition-colors">Privacy Policy</a></li>
+                  <li><a href="#" className="font-mono text-sm text-background/70 hover:text-background transition-colors">Terms of Service</a></li>
+                </ul>
+              </div>
+            </div>
+            
+            {/* Footer Bottom */}
+            <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-background/20">
+              <div className="flex items-center gap-4 mb-4 md:mb-0">
+                <h3 className="text-xl font-display font-black tracking-tight uppercase text-background">
                   MEMETIK
                 </h3>
-                <p className="font-mono text-sm text-background/60 mb-4">
-                  Answer Engine Optimization for ambitious brands.
-                </p>
-                <div className="flex flex-wrap items-center gap-2 font-mono text-xs uppercase tracking-wider text-background/50">
-                  <span>NEW YORK</span>
-                  <span>/</span>
-                  <span>SAN FRANCISCO</span>
-                  <span>/</span>
-                  <span>GLOBAL</span>
-                </div>
+                <span className="font-mono text-xs text-background/40">Answer Engine Optimization</span>
               </div>
               
-              <div className="md:text-right">
-                <div className="inline-flex items-center gap-2 mb-4">
+              <div className="flex items-center gap-6">
+                <div className="inline-flex items-center gap-2">
                   <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
                   <span className="font-mono text-xs uppercase tracking-wider text-background/70">
-                    Currently accepting new clients
+                    Accepting clients
                   </span>
                 </div>
                 <div className="font-mono text-[10px] uppercase tracking-widest text-background/40">
-                  © 2026 MEMETIK // ALL RIGHTS RESERVED
+                  © 2026 MEMETIK
                 </div>
               </div>
             </div>

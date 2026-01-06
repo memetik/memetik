@@ -35,12 +35,12 @@ const phases = [
     description: "We build the content infrastructure that AI models prefer to cite. High-authority assets designed specifically for LLM consumption.",
     icon: <Database className="w-12 h-12" />,
     deliverables: [
-      "8–12 Apex Assets",
+      "100 bottom-of-funnel articles",
+      "800 programmatic pages",
       "Comparison engines",
-      "Programmatic pages",
       "Entity optimization"
     ],
-    outcome: "Content that AI actually wants to recommend"
+    outcome: "900+ pages of AI-optimized content"
   },
   {
     id: "03",

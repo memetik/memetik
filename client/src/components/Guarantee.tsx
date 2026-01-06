@@ -19,7 +19,7 @@ export function Guarantee() {
           
           {/* Subhead */}
           <p className="font-serif text-lg md:text-xl text-foreground/70 mb-8 max-w-2xl mx-auto">
-            If we don't measurably improve your AI visibility within 90 days, we'll refund your first month. No questions asked.
+            If there's no measurable movement in your AI visibility within 90 days, you get a full refund. No questions asked.
           </p>
           
           {/* What's Included */}
