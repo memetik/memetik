@@ -7,6 +7,8 @@ import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import Strategy from "@/pages/Strategy";
 import BTSOffer from "@/pages/BTSOffer";
+import Resources from "@/pages/Resources";
+import ResourcePost from "@/pages/ResourcePost";
 import { ThemeProvider } from "@/components/theme-provider";
 
 function Router() {
@@ -15,6 +17,8 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/strategy" component={Strategy} />
       <Route path="/bts" component={BTSOffer} />
+      <Route path="/resources" component={Resources} />
+      <Route path="/resources/:slug" component={ResourcePost} />
       <Route component={NotFound} />
     </Switch>
   );

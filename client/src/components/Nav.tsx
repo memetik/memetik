@@ -14,10 +14,11 @@ export function Nav() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const links = [
+  const links: { href: string; label: string; isPage?: boolean }[] = [
     { href: "#work", label: "CASE STUDIES" },
     { href: "#methodology", label: "PROCESS" },
     { href: "#faq", label: "FAQ" },
+    { href: "/resources", label: "RESOURCES", isPage: true },
   ];
 
   const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -65,16 +66,24 @@ export function Nav() {
         {/* Desktop Menu - Technical Style */}
         <div className="hidden md:flex items-center h-full">
           {links.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              onClick={(e) => scrollToSection(e, link.href)}
-              className="h-full flex items-center px-8 text-xs font-mono tracking-widest hover:bg-primary hover:text-background transition-colors border-l border-primary/10 relative group cursor-pointer"
-            >
-              {link.label}
-              {/* Corner mark on hover */}
-              <span className="absolute top-2 right-2 w-2 h-2 border-t-2 border-r-2 border-background opacity-0 group-hover:opacity-100 transition-opacity"></span>
-            </a>
+            link.isPage ? (
+              <Link key={link.label} href={link.href}>
+                <a className="h-full flex items-center px-8 text-xs font-mono tracking-widest hover:bg-primary hover:text-background transition-colors border-l border-primary/10 relative group cursor-pointer">
+                  {link.label}
+                  <span className="absolute top-2 right-2 w-2 h-2 border-t-2 border-r-2 border-background opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                </a>
+              </Link>
+            ) : (
+              <a
+                key={link.label}
+                href={link.href}
+                onClick={(e) => scrollToSection(e, link.href)}
+                className="h-full flex items-center px-8 text-xs font-mono tracking-widest hover:bg-primary hover:text-background transition-colors border-l border-primary/10 relative group cursor-pointer"
+              >
+                {link.label}
+                <span className="absolute top-2 right-2 w-2 h-2 border-t-2 border-r-2 border-background opacity-0 group-hover:opacity-100 transition-opacity"></span>
+              </a>
+            )
           ))}
           <a
             href="https://cal.com/memetik/letstalk"
@@ -109,14 +118,25 @@ export function Nav() {
         >
           <div className="flex flex-col p-8 gap-8 items-center justify-center h-full pb-32">
             {links.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                className="text-3xl font-display font-bold hover:text-primary transition-colors tracking-tighter cursor-pointer"
-                onClick={(e) => scrollToSection(e, link.href)}
-              >
-                {link.label}
-              </a>
+              link.isPage ? (
+                <Link key={link.label} href={link.href}>
+                  <a 
+                    className="text-3xl font-display font-bold hover:text-primary transition-colors tracking-tighter cursor-pointer"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {link.label}
+                  </a>
+                </Link>
+              ) : (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  className="text-3xl font-display font-bold hover:text-primary transition-colors tracking-tighter cursor-pointer"
+                  onClick={(e) => scrollToSection(e, link.href)}
+                >
+                  {link.label}
+                </a>
+              )
             ))}
           </div>
         </div>
