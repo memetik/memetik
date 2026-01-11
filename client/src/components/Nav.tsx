@@ -1,10 +1,12 @@
 import { Link } from "wouter";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Sun, Moon } from "lucide-react";
 import { useState, useEffect } from "react";
+import { useTheme } from "@/components/theme-provider";
 
 export function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { theme, setTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -87,6 +89,13 @@ export function Nav() {
               </a>
             )
           ))}
+          <button
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            className="h-full flex items-center px-4 border-l border-primary/10 hover:bg-primary hover:text-background transition-colors"
+            aria-label="Toggle theme"
+          >
+            {theme === "dark" ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+          </button>
           <a
             href="https://cal.com/memetik/letstalk"
             className="h-full flex items-center px-6 text-xs font-mono font-bold tracking-widest bg-foreground text-background hover:opacity-90 transition-opacity border-l border-primary/10"
@@ -96,7 +105,14 @@ export function Nav() {
         </div>
 
         {/* Mobile Menu Toggle */}
-        <div className="flex items-center gap-4 md:hidden relative z-50">
+        <div className="flex items-center gap-3 md:hidden relative z-50">
+          <button
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            className="p-2 hover:bg-primary/10 transition-colors"
+            aria-label="Toggle theme"
+          >
+            {theme === "dark" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+          </button>
           <a
             href="https://cal.com/memetik/letstalk"
             className="px-3 py-2 text-[10px] font-mono font-bold tracking-widest bg-foreground text-background"
